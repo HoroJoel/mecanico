@@ -1,8 +1,9 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
-
-const CounterOne = () => {
+import { useTranslation } from 'react-i18next';
+export default function CounterOne() {
+  const { t } = useTranslation();
   return (
     <div className="counter-area-1 space-bottom">
       <div className="container">
@@ -26,7 +27,7 @@ const CounterOne = () => {
                             }
                           </TrackVisibility>
                         </h2>
-                        <p className="counter-card_text">Winning Award</p>
+                        <p className="counter-card_text">{t('counter.winningAward')}</p>
                       </div>
                       <div className="counter-card_icon">
                         <img
@@ -51,7 +52,7 @@ const CounterOne = () => {
                             }
                           </TrackVisibility>
                         </h2>
-                        <p className="counter-card_text">Happy Clients</p>
+                        <p className="counter-card_text">{t('counter.happyClients')}</p>
                       </div>
                       <div className="counter-card_icon">
                         <img
@@ -76,7 +77,7 @@ const CounterOne = () => {
                             }
                           </TrackVisibility>
                         </h2>
-                        <p className="counter-card_text">Team Member</p>
+                        <p className="counter-card_text">{t('counter.teamMember')}</p>
                       </div>
                       <div className="counter-card_icon">
                         <img
@@ -101,7 +102,7 @@ const CounterOne = () => {
                             }
                           </TrackVisibility>
                         </h2>
-                        <p className="counter-card_text">Project Done</p>
+                        <p className="counter-card_text">{t('counter.projectDone')}</p>
                       </div>
                       <div className="counter-card_icon">
                         <img
@@ -126,15 +127,15 @@ const CounterOne = () => {
                   <ul>
                     <li>
                       <i className="fas fa-check" />
-                      We're Your Repair Superstore
+                      {t('checklist.superstore')}
                     </li>
                     <li>
                       <i className="fas fa-check" />
-                      Fueled by Expertise
+                      {t('checklist.expertise')}
                     </li>
                     <li>
                       <i className="fas fa-check" />
-                      Car Repair the best Services
+                      {t('checklist.bestService')}
                     </li>
                   </ul>
                 </div>
@@ -143,10 +144,10 @@ const CounterOne = () => {
                     <img src="assets/img/icon/phone-1.svg" alt="Fixturbo" />
                   </div>
                   <div className="media-body">
-                    <h6 className="title text-white">Requesting A Call:</h6>
+                    <h6 className="title text-white">{t('call.requestCall')}</h6>
                     <h4 className="link">
-                      <a className="text-white" href="tel:6295550129">
-                        (629) 555-0129
+                      <a className="text-white" href="tel:+56932634617">
+                        +569 326 346 17
                       </a>
                     </h4>
                   </div>
@@ -159,5 +160,3 @@ const CounterOne = () => {
     </div>
   );
 };
-
-export default CounterOne;

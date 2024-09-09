@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const AboutOne = () => {
+import { useTranslation } from 'react-i18next';
+export default function AboutOne (){
+  const { t } = useTranslation('translation');
   return (
     <div className="about-area-1 space-bottom ">
       <div className="about1-shape-img shape-mockup">
@@ -21,23 +22,22 @@ const AboutOne = () => {
           <div className="col-xl-6">
             <div className="about-thumb1 mb-40 mb-xl-0">
               <div className="about-img-1">
-                <img src="/assets/img/normal/about_1-1.png" alt="Fixturbo" />
+                <img src="assets\img\icon\mecanico.png" alt="Fixturbo" />
               </div>
               <div className="about-img-2">
-                <img src="/assets/img/normal/about_1-2.png" alt="Fixturbo" />
+                <img src="assets\img\icon\mecanico-volkswagen.png" alt="Fixturbo" />
               </div>
             </div>
           </div>
           <div className="col-xl-6">
             <div className="about-content-wrap">
               <div className="title-area me-xl-5 mb-20">
-                <span className="sub-title">Know About Us</span>
+                <span className="sub-title">{t('about.subTitle')}</span>
                 <h2 className="sec-title">
-                  Where Expertise Meets Every Engine
+                  {t('about.title')}
                 </h2>
                 <p className="sec-text">
-                  Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                  quis venenatis cras sed eu massa eu faucibus. Urna fusce
+                  {t('about.description')}
                 </p>
               </div>
               <div className="row gy-4 justify-content-xl-between justify-content-end align-items-center flex-row-reverse">
@@ -51,10 +51,10 @@ const AboutOne = () => {
                     >
                       <img src="assets/img/icon/about_icon1-1.svg" alt="Fixturbo" />
                       <h3 className="about-year-wrap-title">
-                        <span className="counter-number">25</span>+
+                        <span className="counter-number">{t('about.experience.count')}</span>+
                       </h3>
                       <p className="about-year-wrap-text">
-                        Years of experience
+                      {t('about.experience.years')}
                       </p>
                     </div>
                   </div>
@@ -64,19 +64,18 @@ const AboutOne = () => {
                     <ul>
                       <li>
                         <i className="fas fa-check-circle" />
-                        Professional Car Repair Services
+                        {t('about.checklist.professionalService')}
                       </li>
                       <li>
-                        <i className="fas fa-check-circle" />A car repair is a
-                        service provided to fix
-                      </li>
-                      <li>
-                        <i className="fas fa-check-circle" />
-                        Get Your Car Fixed Right Away Car Repair{" "}
+                        <i className="fas fa-check-circle" />{t('about.checklist.repairService')}
                       </li>
                       <li>
                         <i className="fas fa-check-circle" />
-                        Quick and Efficient Car Repairs
+                        {t('about.checklist.fixRightAway')}{" "}
+                      </li>
+                      <li>
+                        <i className="fas fa-check-circle" />
+                        {t('about.checklist.quickEfficient')}
                       </li>
                     </ul>
                   </div>
@@ -84,7 +83,7 @@ const AboutOne = () => {
               </div>
               <div className="btn-wrap mt-20">
                 <Link to="/about" className="btn style2 mt-xl-0 mt-20">
-                  Read More <i className="fas fa-arrow-right ms-2" />
+                {t('about.button.readMore')} <i className="fas fa-arrow-right ms-2" />
                 </Link>
               </div>
             </div>
@@ -94,5 +93,3 @@ const AboutOne = () => {
     </div>
   );
 };
-
-export default AboutOne;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import { useTranslation } from 'react-i18next';
 const HeaderOne = () => {
   const [active, setActive] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -46,50 +46,42 @@ const HeaderOne = () => {
   const mobileMenu = () => {
     setActive(!active);
   };
+  const { t } = useTranslation('translation');
+  
   return (
     <>
       <header className="nav-header header-layout1">
+      
         <div className="header-top">
           <div className="container">
             <div className="row justify-content-center justify-content-lg-between align-items-center gy-2">
-              <div className="col-auto d-none d-lg-block">
+              <div className="col d-flex align-items-center">
                 <div className="header-links">
-                  <ul>
-                    <li>
+                  <ul className="d-flex">
+                    <li className="me-4">
                       <i className="fas fa-envelope" />
-                      <Link to="mailto:info@example.com">info@example.com</Link>
+                      <Link to="mailto:mauriciojofre.alpacifico80@gmail.com.alpacifico80@gmail.com">{t('footer-area.contact.email')}</Link>
                     </li>
-                    <li>
+                    <li className="me-4">
                       <i className="fas fa-map-marker-alt" />
-                      6391 Elgin St. Celina, 10299
+                      {t('footer-area.contact.address')}
                     </li>
                     <li>
                       <i className="fas fa-clock" />
-                      Sunday - Friday
+                        {t('header.hours')}
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div className="col-auto">
-                <div className="header-links ps-0">
-                  <ul>
-                    <li>
-                      <div className="social-links">
-                        <Link to="https://www.facebook.com/">
-                          <i className="fab fa-facebook-f" />
-                        </Link>
-                        <Link to="https://www.instagram.com/">
-                          <i className="fab fa-instagram" />
-                        </Link>
-                        <Link to="https://www.twitter.com/">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                        <Link to="https://www.linkedin.com/">
-                          <i className="fab fa-linkedin" />
-                        </Link>
-                      </div>
-                    </li>
-                  </ul>
+                <div className="social-links ms-auto">
+                  <Link to="https://www.facebook.com/jofrealpacifico">
+                    <i className="fab fa-facebook-f" />
+                  </Link>
+                  <Link to="https://www.instagram.com/jofrealpacifico">
+                    <i className="fab fa-instagram" />
+                  </Link>
+                  <Link to="https://www.tiktok.com/@jofrealpacifico">
+                    <i className="fab fa-tiktok" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -100,99 +92,41 @@ const HeaderOne = () => {
           <div className="menu-area">
             <div className="header-navbar-logo">
               <Link to="/">
-                <img src="assets/img/logo-white.svg" alt="Fixturbo" />
+                <img src="assets\img\logo_jofre.png"style={{ width: "100%", height:"100%" }}  alt="Fixturbo" />
               </Link>
+              
             </div>
+            <br />
             <div className="container">
               <div className="row align-items-center justify-content-lg-start justify-content-between">
                 <div className="col-auto d-xl-none d-block">
                   <div className="header-logo">
                     <Link to="/">
-                      <img src="assets/img/logo-white.svg" alt="Fixturbo" />
+                      <img src="assets\img\logo_jofre.png" style={{ width: "100%", height:"100%" }}  alt="Fixturbo" />
                     </Link>
                   </div>
+                  
                 </div>
+                <br />
                 <div className="col-auto">
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
-                      <li className="menu-item-has-children">
-                        <Link to="#">Home</Link>
-                        <ul className="sub-menu">
-                          <li>
-                            <NavLink
-                              to="/"
-                              className={(navData) =>
-                                navData.isActive ? "active" : ""
-                              }
-                            >
-                              Home 01
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/home-2"
-                              className={(navData) =>
-                                navData.isActive ? "active" : ""
-                              }
-                            >
-                              Home 02
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/home-3"
-                              className={(navData) =>
-                                navData.isActive ? "active" : ""
-                              }
-                            >
-                              Home 03
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/home-4"
-                              className={(navData) =>
-                                navData.isActive ? "active" : ""
-                              }
-                            >
-                              Home 04
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/home-5"
-                              className={(navData) =>
-                                navData.isActive ? "active" : ""
-                              }
-                            >
-                              Home 05
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/home-6"
-                              className={(navData) =>
-                                navData.isActive ? "active" : ""
-                              }
-                            >
-                              Home 06
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </li>
                       <li>
+                        <Link to="/">{t('header.buttons.home')}</Link>
+                      </li>
+                      <li style={{ display: "none" }}>
                         <NavLink
                           to="/about"
                           className={(navData) =>
                             navData.isActive ? "active" : ""
                           }
                         >
-                          About Us
+                          {t('header.buttons.about')}
                         </NavLink>
                       </li>
-                      <li className="menu-item-has-children">
-                        <Link to="#">Services</Link>
-                        <ul className="sub-menu">
+                      <li className="menu-item-has-children" style={{ display: "none" }}>
+                        <Link to="/service">{t('header.buttons.services')}</Link>
+                        <ul className="sub-menu" style={{ display: "none" }}>
                           <li>
                             <NavLink
                               to="/service"
@@ -203,7 +137,7 @@ const HeaderOne = () => {
                               Service
                             </NavLink>
                           </li>
-                          <li>
+                          <li >
                             <NavLink
                               to="/service-details"
                               className={(navData) =>
@@ -215,7 +149,7 @@ const HeaderOne = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="menu-item-has-children">
+                      <li className="menu-item-has-children" style={{ display: "none" }}>
                         <Link to="#">Projects</Link>
                         <ul className="sub-menu">
                           <li>
@@ -240,9 +174,9 @@ const HeaderOne = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="menu-item-has-children">
-                        <Link to="#">Blog</Link>
-                        <ul className="sub-menu">
+                      <li style={{ display: "none" }}className="menu-item-has-children">
+                        <Link to="#" style={{ display: "none" }}>Blog</Link>
+                        <ul className="sub-menu" style={{ display: "none" }}>
                           <li>
                             <NavLink
                               to="/blog"
@@ -265,7 +199,7 @@ const HeaderOne = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="menu-item-has-children">
+                      <li className="menu-item-has-children" style={{ display: "none" }}>
                         <Link to="#">Pages</Link>
                         <ul className="sub-menu">
                           <li>
@@ -340,7 +274,7 @@ const HeaderOne = () => {
                           </li>
                         </ul>
                       </li>
-                      <li>
+                      <li style={{ display: "none" }}>
                         <NavLink
                           to="/contact"
                           className={(navData) =>
@@ -366,16 +300,16 @@ const HeaderOne = () => {
                   <div className="navbar-right-desc">
                     <img src="assets/img/icon/chat.svg" alt="Fixturbo" />
                     <div className="navbar-right-desc-details">
-                      <h6 className="title">Need help?</h6>
-                      <Link className="link" to="tel:+2590256215">
-                        (307) 555-0133
+                      <h6 className="title">{t('header.buttons.help.title')}</h6>
+                      <Link className="link" to="https://api.whatsapp.com/send/?phone=56932634617&text=Hola+%2Ajofrealpacifico%2A.+Necesito+m%C3%A1s+informaci%C3%B3n+sobre+jofrealpacifico+https%3A%2F%2Fjofrealpacifico.cl&type=phone_number&app_absent=0">
+                      {t('header.buttons.help.link')}
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="logo-bg" />
+            
           </div>
         </div>
 
@@ -393,71 +327,9 @@ const HeaderOne = () => {
             <div className="mobile-menu">
               <ul id="offcanvas-navigation">
                 <li className="menu-item-has-children submenu-item-has-children">
-                  <Link to="#">Home</Link>
-                  <ul className="sub-menu submenu-class">
-                    <li>
-                      <NavLink
-                        to="/"
-                        className={(navData) =>
-                          navData.isActive ? "active" : ""
-                        }
-                      >
-                        Home 01
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/home-2"
-                        className={(navData) =>
-                          navData.isActive ? "active" : ""
-                        }
-                      >
-                        Home 02
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/home-3"
-                        className={(navData) =>
-                          navData.isActive ? "active" : ""
-                        }
-                      >
-                        Home 03
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/home-4"
-                        className={(navData) =>
-                          navData.isActive ? "active" : ""
-                        }
-                      >
-                        Home 04
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/home-5"
-                        className={(navData) =>
-                          navData.isActive ? "active" : ""
-                        }
-                      >
-                        Home 05
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/home-6"
-                        className={(navData) =>
-                          navData.isActive ? "active" : ""
-                        }
-                      >
-                        Home 06
-                      </NavLink>
-                    </li>
-                  </ul>
+                  <Link to="/" >{t('header.buttons.home')}</Link>
                 </li>
-                <li>
+                <li style={{ display: "none" }}>
                   <NavLink
                     to="/about"
                     className={(navData) => (navData.isActive ? "active" : "")}
@@ -465,7 +337,7 @@ const HeaderOne = () => {
                     About
                   </NavLink>
                 </li>
-                <li className="menu-item-has-children submenu-item-has-children">
+                <li style={{ display: "none" }} className="menu-item-has-children submenu-item-has-children">
                   <Link to="#">Pages</Link>
                   <ul className="sub-menu submenu-class">
                     <li>
@@ -540,7 +412,7 @@ const HeaderOne = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item-has-children submenu-item-has-children">
+                <li style={{ display: "none" }} className="menu-item-has-children submenu-item-has-children">
                   <Link to="#">Project</Link>
                   <ul className="sub-menu submenu-class">
                     <li>
@@ -565,7 +437,7 @@ const HeaderOne = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item-has-children submenu-item-has-children">
+                <li style={{ display: "none" }} className="menu-item-has-children submenu-item-has-children">
                   <Link to="#">Service</Link>
                   <ul className="sub-menu submenu-class">
                     <li>
@@ -590,7 +462,7 @@ const HeaderOne = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item-has-children submenu-item-has-children">
+                <li style={{ display: "none" }} className="menu-item-has-children submenu-item-has-children">
                   <Link to="#">Shop</Link>
                   <ul className="sub-menu submenu-class">
                     <li>
@@ -645,7 +517,7 @@ const HeaderOne = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item-has-children submenu-item-has-children">
+                <li style={{ display: "none" }} className="menu-item-has-children submenu-item-has-children">
                   <Link to="#">Blog</Link>
                   <ul className="sub-menu submenu-class">
                     <li>
@@ -670,7 +542,7 @@ const HeaderOne = () => {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li style={{ display: "none" }}>
                   <NavLink
                     to="/contact"
                     className={(navData) => (navData.isActive ? "active" : "")}

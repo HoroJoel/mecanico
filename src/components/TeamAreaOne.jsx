@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TeamAreaOne = () => {
   return (
-    <div className="team-area-1 space-bottom">
+    <div style={{ display: "none" }}  className="team-area-1 space-bottom">
       <div className="container">
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-7 col-md-8">
@@ -45,14 +45,14 @@ const TeamAreaOne = () => {
                   <Link to="https://linkedin.com/">
                     <i className="fab fa-linkedin-in" />
                   </Link>
-                  <Link to="https://www.instagram.com/">
+                  <Link to="https://www.instagram.com/jofrealpacifico/">
                     <i className="fab fa-instagram" />
                   </Link>
                   <Link to="https://facebook.com/">
                     <i className="fab fa-facebook-f" />
                   </Link>
                   <Link to="https://twitter.com/">
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-tiktok" />
                   </Link>
                 </div>
               </div>
@@ -80,14 +80,14 @@ const TeamAreaOne = () => {
                   <Link to="https://linkedin.com/">
                     <i className="fab fa-linkedin-in" />
                   </Link>
-                  <Link to="https://www.instagram.com/">
+                  <Link to="https://www.instagram.com/jofrealpacifico/">
                     <i className="fab fa-instagram" />
                   </Link>
                   <Link to="https://facebook.com/">
                     <i className="fab fa-facebook-f" />
                   </Link>
                   <Link to="https://twitter.com/">
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-tiktok" />
                   </Link>
                 </div>
               </div>
@@ -115,14 +115,14 @@ const TeamAreaOne = () => {
                   <Link to="https://linkedin.com/">
                     <i className="fab fa-linkedin-in" />
                   </Link>
-                  <Link to="https://www.instagram.com/">
+                  <Link to="https://www.instagram.com/jofrealpacifico/">
                     <i className="fab fa-instagram" />
                   </Link>
                   <Link to="https://facebook.com/">
                     <i className="fab fa-facebook-f" />
                   </Link>
                   <Link to="https://twitter.com/">
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-tiktok" />
                   </Link>
                 </div>
               </div>

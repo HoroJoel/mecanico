@@ -1,7 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Thumbs, EffectFade } from "swiper";
-const TestimonialOne = () => {
+import { useTranslation } from "react-i18next";
+
+export default function TestimonialOne  ()  {
+  const { t } = useTranslation('translation');
   return (
     <div
       className="testimonial-area-1 overflow-hidden"
@@ -17,10 +20,10 @@ const TestimonialOne = () => {
           <div className="col-lg-6">
             <div className="space">
               <div className="title-area">
-                <span className="sub-title">Clients testimonial</span>
+                <span className="sub-title">{t('testimonial-area.title')}</span>
 
                 <h2 className="sec-title text-white">
-                  Car Repair The Best <br /> Services
+                  {t('testimonial-area.sectionTitle')}
                 </h2>
               </div>
               <div className="row global-carousel testi-slider-1">
@@ -65,10 +68,10 @@ const TestimonialOne = () => {
                           <div className="testi-card-profile">
                             <div className="testi-card-profile-details">
                               <h4 className="testi-profile-title">
-                                Nafiz Bhuiyan
+                                {t('testimonial-area.testimonials.1.name')}
                               </h4>
                               <span className="testi-profile-desig">
-                                Customer
+                                {t('testimonial-area.testimonials.1.designation')}
                               </span>
                             </div>
                             <div className="quote-icon">
@@ -79,11 +82,7 @@ const TestimonialOne = () => {
                             </div>
                           </div>
                           <p className="testi-card_text">
-                            Roof services include repairs installations, and
-                            maintena resident commercial buildings. Expert the a
-                            technicians diagnose and ther address issues roofing
-                            mater gutter systems, and ventilation a Roof
-                            services
+                            {t('testimonial-area.testimonials.1.quote')}
                           </p>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -100,13 +99,13 @@ const TestimonialOne = () => {
                     <div>
                       <div className="testi-card">
                         <div className="testi-card_content">
-                          <div className="testi-card-profile">
+                        <div className="testi-card-profile">
                             <div className="testi-card-profile-details">
                               <h4 className="testi-profile-title">
-                                Nafiz Bhuiyan
+                                {t('testimonial-area.testimonials.2.name')}
                               </h4>
                               <span className="testi-profile-desig">
-                                Customer
+                                {t('testimonial-area.testimonials.2.designation')}
                               </span>
                             </div>
                             <div className="quote-icon">
@@ -117,11 +116,7 @@ const TestimonialOne = () => {
                             </div>
                           </div>
                           <p className="testi-card_text">
-                            Roof services include repairs installations, and
-                            maintena resident commercial buildings. Expert the a
-                            technicians diagnose and ther address issues roofing
-                            mater gutter systems, and ventilation a Roof
-                            services
+                            {t('testimonial-area.testimonials.2.quote')}
                           </p>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -138,13 +133,13 @@ const TestimonialOne = () => {
                     <div>
                       <div className="testi-card">
                         <div className="testi-card_content">
-                          <div className="testi-card-profile">
+                        <div className="testi-card-profile">
                             <div className="testi-card-profile-details">
                               <h4 className="testi-profile-title">
-                                Nafiz Bhuiyan
+                                {t('testimonial-area.testimonials.3.name')}
                               </h4>
                               <span className="testi-profile-desig">
-                                Customer
+                                {t('testimonial-area.testimonials.3.designation')}
                               </span>
                             </div>
                             <div className="quote-icon">
@@ -155,11 +150,7 @@ const TestimonialOne = () => {
                             </div>
                           </div>
                           <p className="testi-card_text">
-                            Roof services include repairs installations, and
-                            maintena resident commercial buildings. Expert the a
-                            technicians diagnose and ther address issues roofing
-                            mater gutter systems, and ventilation a Roof
-                            services
+                            {t('testimonial-area.testimonials.3.quote')}
                           </p>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -188,7 +179,7 @@ const TestimonialOne = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
-export default TestimonialOne;

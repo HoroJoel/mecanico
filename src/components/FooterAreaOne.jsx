@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
-const FooterAreaOne = () => {
+export default function FooterAreaOne() {
+  const { t } = useTranslation('translation');
   return (
     <footer
       className="footer-wrapper footer-layout1"
@@ -11,11 +13,11 @@ const FooterAreaOne = () => {
         <div className="widget-area">
           <div className="row justify-content-between">
             <div className="col-md-6 col-xl-auto">
-              <div className="widget widget_nav_menu footer-widget">
+              <div style={{ display: "none" }} className="widget widget_nav_menu footer-widget">
                 <h3 className="widget_title">Company</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
-                    <li>
+                    <li >
                       <Link to="/about">About</Link>
                     </li>
                     <li>
@@ -31,7 +33,7 @@ const FooterAreaOne = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-xl-auto">
+            <div style={{ display: "none" }} className="col-md-6 col-xl-auto">
               <div className="widget widget_nav_menu footer-widget">
                 <h3 className="widget_title">Services</h3>
                 <div className="menu-all-pages-container">
@@ -57,32 +59,34 @@ const FooterAreaOne = () => {
             </div>
             <div className="col-md-6 col-xl-auto">
               <div className="widget footer-widget">
-                <h3 className="widget_title">Contact</h3>
+                <h3 className="widget_title">{t('footer-area.contact.title')}</h3>
                 <div className="widget-contact">
                   <p>
-                    <Link to="tel:888123456765">(+888) 123 456 765</Link>
+                    <Link to="https://api.whatsapp.com/send/?phone=56932634617&text=Hola+%2Ajofrealpacifico%2A.+Necesito+m%C3%A1s+informaci%C3%B3n+sobre+jofrealpacifico+https%3A%2F%2Fjofrealpacifico.cl&type=phone_number&app_absent=0">
+                    {t('footer-area.contact.phone')}
+                    </Link>
                   </p>
                   <p>
-                    <Link to="mailto:infoname@mail.com">infoname@mail.com</Link>
+                    <Link to={t('footer-area.contact.email')}>{t('footer-area.contact.email')}</Link>
                   </p>
                   <p>
-                    Old city Street,USA <br /> 1212 New york-3500
+                  {t('footer-area.contact.address')}
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-xl-auto">
               <div className="widget footer-widget widget-newsletter">
-                <h3 className="widget_title">Get In Touch</h3>
+                <h3 className="widget_title">{t('footer-area.newsletter.title')}</h3>
                 <p className="footer-text mb-50">
-                  Lorem Ipsum is simply is dumiomy is text Lorem Ipsum is simply
+                {t('footer-area.newsletter.description')}
                 </p>
                 <form className="newsletter-form">
                   <div className="form-group">
                     <input
                       className="form-control"
                       type="email"
-                      placeholder="Your Email Address"
+                      placeholder={t('footer-area.newsletter.placeholderEmail')}
                       required=""
                     />
                   </div>
@@ -100,14 +104,14 @@ const FooterAreaOne = () => {
           <div className="row gy-3 justify-content-md-between justify-content-center">
             <div className="col-auto align-self-center">
               <p className="copyright-text text-center">
-                © <Link to="#">Fixturbo</Link> 2024 | All Rights Reserved
+              {t('footer-area.copyright.text')}
               </p>
             </div>
             <div className="col-auto">
               <div className="footer-links">
-                <Link to="/contact">Tarms &amp; Condition</Link>
-                <Link to="/contact">Privacy Policy</Link>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="#">{t('footer-area.copyright.terms')}</Link>
+                <Link to="#">{t('footer-area.copyright.privacyPolicy')}</Link>
+                <Link to="#">{t('footer-area.copyright.contactUs')}</Link>
               </div>
             </div>
           </div>
@@ -117,4 +121,3 @@ const FooterAreaOne = () => {
   );
 };
 
-export default FooterAreaOne;

@@ -115,7 +115,7 @@ const TeamDetails = () => {
                     <i className="fab fa-facebook-f" />
                   </a>
                   <a href="https://twitter.com/">
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-tiktok" />
                   </a>
                   <a href="https://instagram.com/">
                     <i className="fab fa-instagram" />

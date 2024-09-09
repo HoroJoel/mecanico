@@ -391,7 +391,34 @@
   .th-btn {
     margin-left: 10px;
   }
+}.header-links ul {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  align-items: center;
 }
+
+.header-links li {
+  margin-right: 20px; /* Espacio entre ítems */
+  white-space: nowrap; /* Evita que el texto se parta en varias líneas */
+}
+
+.social-links {
+  margin-left: 20px; /* Espacio entre la lista de contacto y las redes sociales */
+  display: flex;
+  gap: 10px; /* Espacio entre los íconos de las redes sociales */
+}
+
+.social-links a {
+  display: inline-block;
+  color: inherit; /* Mantén el color del enlace */
+}
+
+.header-top .col {
+  display: flex;
+  justify-content: space-between; /* Asegura que los elementos estén separados adecuadamente */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
 .social-links {
   display: inline-flex;
   gap: 40px;

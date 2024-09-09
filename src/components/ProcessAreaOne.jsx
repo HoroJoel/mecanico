@@ -2,7 +2,7 @@ import React from "react";
 
 const ProcessAreaOne = () => {
   return (
-    <section className="process-area-1 space position-relative">
+    <section style={{ display: "none" }} className="process-area-1 space position-relative">
       <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
         <img
           className="about1-shape-img-1 spin"

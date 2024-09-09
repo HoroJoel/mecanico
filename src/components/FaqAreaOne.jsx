@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FaqAreaOne = () => {
   return (
-    <section className="faq-area-1 space-bottom">
+    <section style={{ display: "none" }} className="faq-area-1 space-bottom">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">

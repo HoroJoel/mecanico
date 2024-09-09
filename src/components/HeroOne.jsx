@@ -1,42 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const HeroOne = () => {
+import { useTranslation } from "react-i18next";
+export default function HeroOne() {
+  const { t } = useTranslation('translation');
   return (
     <div
       className="hero-wrapper hero-1"
       id="hero"
-      style={{ backgroundImage: "url(assets/img/hero/hero_bg_1_1.png)" }}
+      style={{ backgroundImage: "url(assets/img/hero/background.png)" }}
     >
       <div className="container">
         <div className="row flex-row-reverse">
           <div className="col-xl-6">
             <div className="hero-style1">
-              <span className="sub-title text-white">Growth Accelerator</span>
+              <span className="sub-title text-white"></span>
+              
               <h1 className="hero-title text-white">
-                Gear Up{" "}
                 <span>
                   <img src="assets/img/hero/hero_shape_1.png" alt="Fixturbo" />
-                  For Great
+                  {t('hero.span')}
                 </span>{" "}
-                Quality Service
+                {t('hero.subTitle')}{" "}
+                {t('hero.title')}
               </h1>
               <p className="hero-text text-white">
-                Vestibulum rhoncus nisl ac gravida porta. Mauris eu sapien lacus
+              {t('hero.text')}
               </p>
-              <div className="btn-group">
+              <div className="btn-group" >
                 <Link to="/about" className="btn">
-                  Learn About Us
+                  {t('hero.buttons.learnAboutUs')}
                 </Link>
                 <Link to="/service" className="btn style-border">
-                  Our Services
+                  {t('hero.buttons.ourServices')}
                 </Link>
               </div>
+              <br></br>
             </div>
           </div>
-          <div className="col-xl-6">
-            <div className="hero-thumb text-center">
-              <img src="assets/img/hero/hero_thumb_1_1.png" alt="Fixturbo" />
+          <div className="col-xl-6" style={{overflow: 'hidden'}}>
+            <div className="hero-thumb text-center" >
+              <img src="assets/img/hero/mecanicos.png" alt="Fixturbo"/>
             </div>
           </div>
         </div>
@@ -44,5 +47,3 @@ const HeroOne = () => {
     </div>
   );
 };
-
-export default HeroOne;
