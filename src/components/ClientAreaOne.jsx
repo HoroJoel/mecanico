@@ -6,7 +6,7 @@ export default function ClientAreaOne()  {
   const { t } = useTranslation('translation');
   return (
     <div
-      className="client-bg-area"
+      className="client-bg-area" 
       style={{ backgroundImage: "url(assets/img/bg/client-bg1-1.png)" }}
     >
       <div className="client-area-1 text-center">

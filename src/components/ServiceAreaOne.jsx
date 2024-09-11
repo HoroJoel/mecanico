@@ -31,7 +31,7 @@ export default function ServiceAreaOne (){
                 <p className="service-card_text">
                 {t('service.services.1.description')}{" "}
                 </p>
-                <Link to="/service-details" className="link-btn">
+                <Link style={{ display: "none" }}  to="/service-details" className="link-btn">
                   {t('service.button.readMore')} <i className="fas fa-arrow-right" />
                 </Link>
               </div>
@@ -52,7 +52,7 @@ export default function ServiceAreaOne (){
                 <p className="service-card_text">
                 {t('service.services.2.description')}{" "}
                 </p>
-                <Link to="/service-details" className="link-btn">
+                <Link style={{ display: "none" }}  to="/service-details" className="link-btn">
                   {t('service.button.readMore')} <i className="fas fa-arrow-right" />
                 </Link>
               </div>
@@ -73,7 +73,7 @@ export default function ServiceAreaOne (){
                 <p className="service-card_text">
                 {t('service.services.3.description')}{" "}
                 </p>
-                <Link to="/service-details" className="link-btn">
+                <Link style={{ display: "none" }}  to="/service-details" className="link-btn">
                   {t('service.button.readMore')} <i className="fas fa-arrow-right" />
                 </Link>
               </div>

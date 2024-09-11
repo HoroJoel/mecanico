@@ -5,6 +5,7 @@ export default function AboutOne (){
   const { t } = useTranslation('translation');
   return (
     <div className="about-area-1 space-bottom ">
+      <section id="about">
       <div className="about1-shape-img shape-mockup">
         <img
           className="about1-shape-img-1 spin"
@@ -81,7 +82,7 @@ export default function AboutOne (){
                   </div>
                 </div>
               </div>
-              <div className="btn-wrap mt-20">
+              <div style={{ display: "none" }}  className="btn-wrap mt-20">
                 <Link to="/about" className="btn style2 mt-xl-0 mt-20">
                 {t('about.button.readMore')} <i className="fas fa-arrow-right ms-2" />
                 </Link>
@@ -90,6 +91,7 @@ export default function AboutOne (){
           </div>
         </div>
       </div>
+      </section>
     </div>
   );
 };

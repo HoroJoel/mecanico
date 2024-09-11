@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 export default function HeroOne() {
   const { t } = useTranslation('translation');
@@ -26,13 +25,13 @@ export default function HeroOne() {
               <p className="hero-text text-white">
               {t('hero.text')}
               </p>
-              <div className="btn-group" >
-                <Link to="/about" className="btn">
+              <div className="btn-group">
+                <a href="#about" className="btn">
                   {t('hero.buttons.learnAboutUs')}
-                </Link>
-                <Link to="/service" className="btn style-border">
+                </a>
+                <a href="#services" className="btn style-border">
                   {t('hero.buttons.ourServices')}
-                </Link>
+                </a>
               </div>
               <br></br>
             </div>

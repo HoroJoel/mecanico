@@ -6,7 +6,6 @@ import AboutOne from "../components/AboutOne";
 import ServiceAreaOne from "../components/ServiceAreaOne";
 import MarqueeOne from "../components/MarqueeOne";
 import PortfolioOne from "../components/PortfolioOne";
-import ClientAreaOne from "../components/ClientAreaOne";
 import PricingPlanOne from "../components/PricingPlanOne";
 import TeamAreaOne from "../components/TeamAreaOne";
 import CTAAreaOne from "../components/CTAAreaOne";
@@ -63,9 +62,6 @@ const HomePageOne = () => {
       {/* Portfolio One */}
       <PortfolioOne />
 
-      {/* Client Area One */}
-      <ClientAreaOne />
-
       {/* Pricing Plan One */}
       <PricingPlanOne />
 
@@ -73,7 +69,7 @@ const HomePageOne = () => {
       <TeamAreaOne />
 
       {/* CTA Area One */}
-      <CTAAreaOne />
+      <CTAAreaOne  />
 
       {/* Testimonial One */}
       <TestimonialOne />

@@ -75,43 +75,64 @@
     }
   },
   "portfolio": {
-    "subTitle": "Proyectos Recientes",
+    "subTitle": "Servicios Trabajados",
     "title": "Donde la Pericia Encuentra Cada Motor",
     "filter": {
-      "all": "Todos los Proyectos",
+      "all": "Todos los Servicios",
       "mechanics": "Mecánica",
       "security": "Seguridad",
       "electricity": "Electrico"
     },
     "projects": {
-        "1": {
-          "category": "Mecánica",
-          "title": "Diagnóstico y Reparación de Motores"
-        },
-        "2": {
-          "category": "Seguridad",
-          "title": "Reparación del Sistema de Frenos"
-        },
-        "3": {
-          "category": "Mecánica",
-          "title": "Revisión de Tren Delantero y Embragues"
-        },
-        "4": {
-          "category": "Electrico",
-          "title": "Revisión del Sistema Eléctrico"
-        },
-        "5": {
-          "category": "Electrico",
-          "title": "Reparación de Aire Acondicionado"
-        },
-        "6": {
-          "category": "Seguridad",
-          "title": "Instalación de Alarmas e Inmovilizadores"
-        }
+      "1": {
+        "category": "Mecánica",
+        "title": "Diagnóstico y Reparación de Motores"
       },
-      "button": {
-        "readMore": "Leer Más"
+      "2": {
+        "category": "Seguridad",
+        "title": "Reparación del Sistema de Frenos"
+      },
+      "3": {
+        "category": "Mecánica",
+        "title": "Revisión de Tren Delantero y Embragues"
+      },
+      "4": {
+        "category": "Electrico",
+        "title": "Revisión del Sistema Eléctrico"
+      },
+      "5": {
+        "category": "Electrico",
+        "title": "Reparación de Aire Acondicionado"
+      },
+      "6": {
+        "category": "Seguridad",
+        "title": "Instalación de Alarmas e Inmovilizadores"
+      },
+      "7": {
+        "category": "Seguridad",
+        "title": "Reparación de Chapas y Llaves con Chip"
+      },
+      "8": {
+        "category": "Electrónica",
+        "title": "Reparación de Cremayeras Alzavidrio y Botoneras"
+      },
+      "9": {
+        "category": "Diagnóstico",
+        "title": "Diagnósticos con Escáner y Osciloscopio"
+      },
+      "10": {
+        "category": "Electrónica",
+        "title": "Banco de Pruebas de Inyectores, Bobinas y Módulos de Encendido"
+      },
+      "11": {
+        "category": "Seguridad",
+        "title": "Revisión de Módulos de ABS y Airbag"
       }
+    },
+
+    "button": {
+      "readMore": "Leer Más"
+    }
   },
   "appointmentArea": {
     "titleArea": {

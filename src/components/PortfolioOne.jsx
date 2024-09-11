@@ -10,39 +10,69 @@ export default function PortfolioOne() {
   const projects = [
     {
       id: 1,
-      category: t('portfolio.filter.electricity'),
+      category: t('portfolio.filter.mechanics'),
       img: "assets/img/portfolio/1-3.png",
       title: t('portfolio.projects.1.title'),
     },
     {
       id: 2,
-      category: t('portfolio.filter.mechanics'),
+      category: t('portfolio.filter.security'),
       img: "assets/img/portfolio/1-4.png",
       title: t('portfolio.projects.2.title'),
     },
     {
       id: 3,
-      category: t('portfolio.filter.security'),
-      img: "assets/img/portfolio/1-6.png",
+      category: t('portfolio.filter.mechanics'),
+      img: "assets/img/portfolio/1-7.png",
       title: t('portfolio.projects.3.title'),
     },
     {
       id: 4,
       category: t('portfolio.filter.electricity'),
-      img: "assets/img/portfolio/1-7.png",
+      img: "assets/img/portfolio/1-6.png",
       title: t('portfolio.projects.4.title'),
     },
     {
       id: 5,
-      category: t('portfolio.filter.mechanics'),
-      img: "assets/img/portfolio/1-8.png",
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-5.jpg",
       title: t('portfolio.projects.5.title'),
     },
     {
       id: 6,
       category: t('portfolio.filter.security'),
-      img: "assets/img/portfolio/1-9.png",
+      img: "assets/img/portfolio/1-2.png",
       title: t('portfolio.projects.6.title'),
+    },
+    {
+      id: 7,
+      category: t('portfolio.filter.security'),
+      img: "assets/img/portfolio/1-1.jpeg",
+      title: t('portfolio.projects.7.title'),
+    },
+    {
+      id: 8,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-10.jpg",
+      title: t('portfolio.projects.8.title'),
+    },
+    {
+      id: 9,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-11.png",
+      title: t('portfolio.projects.9.title'),
+    },
+    {
+      id: 10,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-9.png",
+      title: t('portfolio.projects.10.title'),
+    },
+    {
+      id: 11,
+      category: t('portfolio.filter.security'),
+      img: "assets/img/portfolio/1-8.png",
+      title: t('portfolio.projects.11.title'),
     }
   ];
 
@@ -55,7 +85,9 @@ export default function PortfolioOne() {
   const filteredProjects = active === 'all' ? projects : projects.filter(project => project.category === active);
 
   return (
+    
     <div className="portfolio-area-1 space">
+      <section id="services">
       <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
         <img
           className="about1-shape-img-1 spin"
@@ -128,7 +160,7 @@ export default function PortfolioOne() {
                       <Link to="/project-details">{project.title}</Link>
                     </h4>
                   </div>
-                  <Link to="/project-details" className="icon-btn">
+                  <Link style={{ display: "none" }}  to="/project-details" className="icon-btn">
                     <i className="fas fa-arrow-right" />
                   </Link>
                 </div>
@@ -137,6 +169,7 @@ export default function PortfolioOne() {
           ))}
         </div>
       </div>
+      </section>
     </div>
   );
 }

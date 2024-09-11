@@ -75,10 +75,10 @@
     }
   },
   "portfolio": {
-    "subTitle": "Recent Projects",
+    "subTitle": "Recent Services",
     "title": "Where Expertise Meets Every Engine",
     "filter": {
-      "all": "All Projects",
+      "all": "All Services",
       "mechanics": "Mechanics",
       "security": "Security",
       "electricity": "Electricity"
@@ -86,7 +86,7 @@
     "projects": {
       "1": {
         "category": "Mechanics",
-        "title": "Engine Diagnostics and Repair"
+        "title": "Diagnosis and Repair of Engines"
       },
       "2": {
         "category": "Security",
@@ -94,19 +94,39 @@
       },
       "3": {
         "category": "Mechanics",
-        "title": "Front Suspension and Clutch Inspection"
+        "title": "Front End and Clutch Inspection"
       },
       "4": {
-        "category": "Electricity",
+        "category": "Electrical",
         "title": "Electrical System Inspection"
       },
       "5": {
-        "category": "Electricity",
+        "category": "Electrical",
         "title": "Air Conditioning Repair"
       },
       "6": {
         "category": "Security",
         "title": "Alarm and Immobilizer Installation"
+      },
+      "7": {
+        "category": "Security",
+        "title": "Repair of Locks and Chip Keys"
+      },
+      "8": {
+        "category": "Electronics",
+        "title": "Repair of Power Window Mechanisms and Switches"
+      },
+      "9": {
+        "category": "Diagnostics",
+        "title": "Diagnosis with Scanner and Oscilloscope"
+      },
+      "10": {
+        "category": "Electronics",
+        "title": "Injector, Coil, and Ignition Module Testing Bench"
+      },
+      "11": {
+        "category": "Security",
+        "title": "ABS and Airbag Module Inspection"
       }
     },
     "button": {
