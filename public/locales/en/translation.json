@@ -5,12 +5,13 @@
     "span": "Your vehicle ",
     "text": "Because your time and safety are our priority.",
     "buttons": {
-      "learnAboutUs": "Learn About Us",
+      "learnAboutUs": "Contact Us",
       "ourServices": "Our Services"
     }
   },
   "header": {
-    "hours": "Hours: Monday to Friday: 9:00 AM to 6:30 PM and Saturday from 9:00 AM to 2:00 PM.",
+    "hours": "Hours: Monday to Friday: 9:00 AM to 6:30 PM ",
+    "hours2":"and Saturday from 9:00 AM to 2:00 PM.",
     "buttons": {
       "home": "Home",
       "about": "About Us",

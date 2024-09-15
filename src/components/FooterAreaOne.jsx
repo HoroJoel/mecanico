@@ -70,16 +70,15 @@ export default function FooterAreaOne() {
                     <Link to={t('footer-area.contact.email')}>{t('footer-area.contact.email')}</Link>
                   </p>
                   <p>
-                  {t('footer-area.contact.address')}
+                  <Link to="https://maps.app.goo.gl/bakKHprhDthBcVAU9">{t('footer-area.contact.address')}</Link>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-xl-auto">
+            <div className="col-md-6 col-xl-auto" style={{display:"none"}}>
               <div className="widget footer-widget widget-newsletter">
                 <h3 className="widget_title">{t('footer-area.newsletter.title')}</h3>
                 <p className="footer-text mb-50">
-                {t('footer-area.newsletter.description')}
                 </p>
                 <form className="newsletter-form">
                   <div className="form-group">

@@ -5,12 +5,13 @@
     "span": "Tu vehículo ",
     "text": "Porque tu tiempo y seguridad son nuestra prioridad.",
     "buttons": {
-      "learnAboutUs": "Conócenos",
+      "learnAboutUs": "Contactanos",
       "ourServices": "Nuestros Servicios"
     }
   },
   "header":{
-    "hours":"Horarios: de Lunes a Viernes de: 9:00 a 18:30 Hrs y Sábado de 9:00 a 14:00 Hrs.",
+    "hours":"Horarios: de Lunes a Viernes de: 9:00 a 18:30 Hrs ",
+    "hours2":"y Sábado de 9:00 a 14:00 Hrs.",
     "buttons":{
       "home":"Inicio",
       "about":"Sobre nosotros",
