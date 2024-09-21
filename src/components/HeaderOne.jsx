@@ -6,47 +6,53 @@ const HeaderOne = () => {
   const [scroll] = useState(false);
 
   const { t } = useTranslation('translation');
-
+  const handleOpenMap = () => {
+    const address = "Primera Transversal 2635, Maipú, Chile";
+    const encodedAddress = encodeURIComponent(address);
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+    window.open(googleMapsUrl, '_blank');
+  };
   return (
     <>
       <header className="nav-header header-layout1">
-  <div className="header-top">
-    <div className="container">
-      <div className="row justify-content-center align-items-center text-center gy-2">
-        <div className="col-12 col-lg-auto d-flex flex-column flex-lg-row align-items-center justify-content-center">
-          <div className="header-links">
-            <ul className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-              <li className="me-lg-4 mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
-                <i className="fas fa-envelope me-2" />
-                <Link to="mailto:mauriciojofre.alpacifico80@gmail.com">{t('footer-area.contact.email')}</Link>
-              </li>
-              <li className="me-lg-4 mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
-                <i className="fas fa-map-marker-alt me-2" />
-                {t('footer-area.contact.address')}
-              </li>
-              <li className="d-flex align-items-center justify-content-center">
-                <i className="fas fa-clock me-2" />
-                {t('header.hours')}
-                <br />
-                {t('header.hours2')}
-              </li>
-            </ul>
-          </div>
-          <div className="social-links ms-auto mt-3 mt-lg-0 d-flex justify-content-center">
-            <Link to="https://www.facebook.com/jofrealpacifico" className="me-3">
-              <i className="fab fa-facebook-f" />
-            </Link>
-            <Link to="https://www.instagram.com/jofrealpacifico" className="me-3">
-              <i className="fab fa-instagram" />
-            </Link>
-            <Link to="https://www.tiktok.com/@jofrealpacifico">
-              <i className="fab fa-tiktok" />
-            </Link>
+        <div className="header-top">
+          <div className="container">
+            <div className="row justify-content-center align-items-center text-center gy-2">
+              <div className="col-12 col-lg-auto d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                <div className="header-links">
+                  <ul className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                    {/* <li className="me-lg-4 mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
+                      <i className="fas fa-envelope me-2" />
+                      <Link to="mailto:mauriciojofre.alpacifico80@gmail.com">{t('footer-area.contact.email')}</Link>
+                    </li> */}
+                    <li onClick={handleOpenMap} className="me-lg-4 mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
+                      <i className="fas fa-map-marker-alt me-2" />
+                      {t('footer-area.contact.address')}
+                    </li>
+                    <li className="d-flex align-items-center justify-content-center">
+                      <i className="fas fa-clock me-2" />
+                      {t('header.hours')}
+                    </li>
+                    <li className="d-flex align-items-center justify-content-center">
+                      {t('header.hours2')}
+                    </li>
+                  </ul>
+                </div>
+                {/* <div className="social-links ms-auto mt-3 mt-lg-0 d-flex justify-content-center">
+                  <Link to="https://www.facebook.com/jofrealpacifico" className="me-3">
+                    <i className="fab fa-facebook-f" />
+                  </Link>
+                  <Link to="https://www.instagram.com/jofrealpacifico" className="me-3">
+                    <i className="fab fa-instagram" />
+                  </Link>
+                  <Link to="https://www.tiktok.com/@jofrealpacifico">
+                    <i className="fab fa-tiktok" />
+                  </Link>
+                </div> */}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
         <div className={`sticky-wrapper ${scroll ? "sticky" : ""}`}>
           <div className="menu-area">
@@ -64,9 +70,9 @@ const HeaderOne = () => {
                 </div>
                 <div className="col-auto">
                   <nav className="main-menu d-none d-lg-inline-block">
-                    <ul>
+                    {/* <ul>
                       <li>
-                        <Link to="/">{t('header.buttons.home')}</Link>
+                        <Link to="/">{ }</Link>
                       </li>
                       <li className="d-none">
                         <NavLink to="/about">{t('header.buttons.about')}</NavLink>
@@ -133,7 +139,7 @@ const HeaderOne = () => {
                       <li className="d-none">
                         <NavLink to="/contact">Contact</NavLink>
                       </li>
-                    </ul>
+                    </ul> */}
                   </nav>
                 </div>
                 {/* Remove or comment out the mobile menu button */}

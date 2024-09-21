@@ -9,16 +9,16 @@
       "ourServices": "Nuestros Servicios"
     }
   },
-  "header":{
-    "hours":"Horarios: de Lunes a Viernes de: 9:00 a 18:30 Hrs ",
-    "hours2":"y Sábado de 9:00 a 14:00 Hrs.",
-    "buttons":{
-      "home":"Inicio",
-      "about":"Sobre nosotros",
-      "services":"Servicios",
-      "help":{
-        "title":"¿Necesitas Ayuda?",
-        "link":"+569 326 346 17"
+  "header": {
+    "hours": "Lunes a Viernes de: 9:00 a 18:30 Hrs ",
+    "hours2": "Sábado de 9:00 a 14:00 Hrs.",
+    "buttons": {
+      "home": "Inicio",
+      "about": "Sobre nosotros",
+      "services": "Servicios",
+      "help": {
+        "title": "¿Necesitas Ayuda?",
+        "link": "+569 326 346 17"
       }
     }
   },
@@ -58,15 +58,15 @@
     "subTitle": "Últimos Servicios",
     "title": "Reparación Profesional de Coches",
     "services": {
-      "1":{
+      "1": {
         "title": "Diagnóstico de Motores",
         "description": "Diagnósticos avanzados para la reparación y mantenimiento de motores."
       },
-      "2":{
+      "2": {
         "title": "Sistemas Eléctricos",
         "description": "Soluciones en electricidad automotriz, desde aire acondicionado hasta sistemas de iluminación."
       },
-      "3":{
+      "3": {
         "title": "Sistemas de Seguridad",
         "description": "Reparación de alarmas, inmovilizadores y módulos de ABS y Airbag."
       }
@@ -130,7 +130,6 @@
         "title": "Revisión de Módulos de ABS y Airbag"
       }
     },
-
     "button": {
       "readMore": "Leer Más"
     }
@@ -164,19 +163,19 @@
     "title": "Testimonios de Clientes",
     "sectionTitle": "Taller de Reparación de Autos con los Mejores Servicios",
     "testimonials": {
-      "1":{
+      "1": {
         "name": "Javier Reyes",
         "designation": "Cliente",
         "quote": "Los servicios incluyen diagnóstico y reparación de motores, frenos, sistemas eléctricos, y aire acondicionado. Técnicos expertos identifican y abordan problemas en sistemas eléctricos, frenos, y otras partes del vehículo.",
         "rating": 5
       },
-      "2":{
+      "2": {
         "name": "Francisco Zuñiga",
         "designation": "Cliente",
         "quote": "El servicio es excelente, rápido y confiable. Los técnicos solucionaron el problema de la calefacción de mi automóvil y realizaron un diagnóstico completo del motor.",
         "rating": 4
       },
-      "3":{
+      "3": {
         "name": "Israel Muñoz",
         "designation": "Cliente",
         "quote": "Repararon el sistema eléctrico y revisaron los frenos. También solucionaron un problema con la alarma y el inmovilizador. Muy satisfecho con el servicio recibido.",
@@ -187,8 +186,8 @@
     "arrowPrev": "Anterior",
     "imageAlt": "Imagen testimonial de Fixturbo"
   },
-  "suscribeOne":{
-    "call":"Solicitar una llamada:"
+  "suscribeOne": {
+    "call": "Solicitar una llamada:"
   },
   "footer-area": {
     "company": {
@@ -233,5 +232,4 @@
     "expressCarFix": "Arreglo Exprés de Autos",
     "carCareClinic": "Clínica de Cuidado de Autos"
   }
-    
 }
