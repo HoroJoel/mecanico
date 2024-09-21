@@ -5,12 +5,13 @@
     "span": "Tu vehículo ",
     "text": "Porque tu tiempo y seguridad son nuestra prioridad.",
     "buttons": {
-      "learnAboutUs": "Conócenos",
+      "learnAboutUs": "Contactanos",
       "ourServices": "Nuestros Servicios"
     }
   },
   "header":{
-    "hours":"Horarios: de Lunes a Viernes de: 9:00 a 18:30 Hrs y Sábado de 9:00 a 14:00 Hrs.",
+    "hours":"Horarios: de Lunes a Viernes de: 9:00 a 18:30 Hrs ",
+    "hours2":"y Sábado de 9:00 a 14:00 Hrs.",
     "buttons":{
       "home":"Inicio",
       "about":"Sobre nosotros",
@@ -162,26 +163,26 @@
   "testimonial-area": {
     "title": "Testimonios de Clientes",
     "sectionTitle": "Taller de Reparación de Autos con los Mejores Servicios",
-    "testimonials": [
-      {
-        "name": "Nafiz Bhuiyan",
+    "testimonials": {
+      "1":{
+        "name": "Javier Reyes",
         "designation": "Cliente",
         "quote": "Los servicios incluyen diagnóstico y reparación de motores, frenos, sistemas eléctricos, y aire acondicionado. Técnicos expertos identifican y abordan problemas en sistemas eléctricos, frenos, y otras partes del vehículo.",
         "rating": 5
       },
-      {
-        "name": "Nafiz Bhuiyan",
+      "2":{
+        "name": "Francisco Zuñiga",
         "designation": "Cliente",
         "quote": "El servicio es excelente, rápido y confiable. Los técnicos solucionaron el problema de la calefacción de mi automóvil y realizaron un diagnóstico completo del motor.",
-        "rating": 5
+        "rating": 4
       },
-      {
-        "name": "Nafiz Bhuiyan",
+      "3":{
+        "name": "Israel Muñoz",
         "designation": "Cliente",
         "quote": "Repararon el sistema eléctrico y revisaron los frenos. También solucionaron un problema con la alarma y el inmovilizador. Muy satisfecho con el servicio recibido.",
         "rating": 5
       }
-    ],
+    },
     "arrowNext": "Siguiente",
     "arrowPrev": "Anterior",
     "imageAlt": "Imagen testimonial de Fixturbo"
@@ -222,7 +223,7 @@
       "buttonSubmit": "Enviar"
     },
     "copyright": {
-      "text": "© Fixturbo 2024 | Todos los Derechos Reservados",
+      "text": "© JofrealPacifico 2024 | Todos los Derechos Reservados",
       "terms": "Términos y Condiciones",
       "privacyPolicy": "Política de Privacidad",
       "contactUs": "Contáctanos"

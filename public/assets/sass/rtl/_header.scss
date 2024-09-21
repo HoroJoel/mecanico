@@ -1,146 +1,249 @@
-.header-links li:not(:last-child) {
-    margin: 0 0 0 35px;
-}
-.header-links li > i {
-    margin-left: 10px;
-    margin-right: 0;
-}
-.main-menu > ul >li:first-child {
-    margin-right: 0 !important;
-    margin-left: 11px !important;
-}
-.main-menu > ul > li:last-child {
-    margin-right: 11px !important;
-    margin-left: 0 !important;
-}
-.main-menu ul li.menu-item-has-children > a:after {
-    margin-left: 0px;
-    margin-right: 5px;
-}
-/* Header 1 ---------------------------------- */
-.header-layout1 {
-    .social-links {
-        padding-left: 20px;
-        padding-right: 0;
-        &:after {
-            right: -20px;
-            left: 0;
-        }
-    }
-    .header-navbar-logo {
-        padding-right: 60px;
-        padding-left: 0;
-    }
-    .menu-area {
-        .logo-bg {
-            right: 0;
-            left:auto;
-            border-radius: 0 0 0 5px;
-        }
-    }
-    .navbar-right-desc {
+/* General Header Layout */
+.header-layout1 .header-top {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .header-links {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+      }
+  
+      li {
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
-        gap: 15px;
-        flex-wrap: wrap;
-        .navbar-right-desc-details {
-            .title {
-                font-size: 18px;
-                font-weight: 400;
-                display: block;
-                margin-bottom: -2px;                
-            }
-            .link {
-                font-size: 20px;
-                font-weight: 700;
-                font-family: $title-font;
-            }
-        }
-        i {
-            margin-right: 10px;
-            transform: rotate(-45deg);
-        }
-        a {
-            color: $title-color;
-            &:hover {
-                color: $theme-color;
-            }
-        }
+        justify-content: center;
+        text-align: center;
+        word-wrap: break-word; /* Permite que el texto se ajuste */
+        overflow-wrap: break-word; /* Alternativa moderna para ajustar el texto */
+        max-width: 100%; /* Asegura que el texto no se extienda fuera del contenedor */
+        word-break: break-word; /* Alternativa adicional para manejar palabras largas */
+      }
+  
+      li i {
+        margin-right: 5px;
+      }
     }
-}
-
-@media (max-width: 1700px) {
-    .header-layout1 .header-navbar-logo {
-        padding-right: 35px;
-        padding-left: 0;
+  
+    /* Centrar la sección de redes sociales */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px; /* Ajusta la separación entre los iconos */
+      margin-top: 10px;
+  
+      a {
+        color: #fff; /* Ajusta este color si es necesario */
+        font-size: 18px; /* Tamaño de los íconos */
+      }
     }
-    .header-layout1 .header-top {
-        .header-links {
-            padding-right: 160px;
-            padding-left: 0;
-        }
+  }
+  
+  /* Centrar la imagen del logo */
+  .header-layout1 .header-navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  
+  /* Main Menu Styling */
+  .main-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ajustes para las listas de navegación en la parte superior */
+  .header-links li:not(:last-child) {
+    margin: 0 0 0 35px;
+  }
+  
+  .header-links li > i {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  
+  .main-menu > ul >li:first-child {
+    margin-right: 0 !important;
+    margin-left: 11px !important;
+  }
+  
+  .main-menu > ul > li:last-child {
+    margin-right: 11px !important;
+    margin-left: 0 !important;
+  }
+  
+  .main-menu ul li.menu-item-has-children > a:after {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  
+  /* Layout for larger screens */
+  .header-layout1 {
+    .social-links {
+      padding-left: 20px;
+      padding-right: 0;
+      &:after {
+        right: -20px;
+        left: 0;
+      }
     }
-    .header-layout1 .menu-area {
-        .main-menu {
-            padding-right: 160px;
-            padding-left: 0;
-        }
+  
+    .header-navbar-logo {
+      padding-right: 60px;
+      padding-left: 0;
     }
-}
-@include xxl {
-    .header-layout1 .header-top .header-links {
-        padding-right: 0;
-    }
-    .header-layout1 .menu-area .main-menu {
-        padding-right: 200px;
-    }
-}
-@include ml {
-    .header-layout1 .menu-area .main-menu {
-        padding-right: 160px;
-    }
-    .header-layout1 .header-navbar-logo {
-        padding-right: 30px;
-    }
-}
-@include xl {
-    .header-layout1 .menu-area .main-menu {
-        padding-right: 230px;
-    }
-}
-@include lg {
-    .header-layout1 .menu-area .main-menu {
-        padding-right: 0;
-    }
-    .header-layout1 {
-        .header-logo {
-            &:after {
-                right: 0;
-                left: auto;
-            }
-        }
-    }
-}
-@include md {
-    .header-layout1 .social-links {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .header-layout1 .social-links:after {
+  
+    .menu-area {
+      .logo-bg {
         right: 0;
+        left: auto;
+        border-radius: 0 0 0 5px;
+      }
     }
-}
-
-/* Header 2 ---------------------------------- */
-.header-grid-info {
-    li {
-        &:not(:last-child) {
-            border-left: 1px solid $border-color;
-            padding-left: 30px;
-            margin-left: 30px;
-            border-right: 0;
-            padding-right: 0;
-            margin-right: 0;
+  
+    .navbar-right-desc {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+  
+      .navbar-right-desc-details {
+        .title {
+          font-size: 18px;
+          font-weight: 400;
+          display: block;
+          margin-bottom: -2px;                
         }
+  
+        .link {
+          font-size: 20px;
+          font-weight: 700;
+          font-family: $title-font;
+        }
+      }
+  
+      i {
+        margin-right: 10px;
+        transform: rotate(-45deg);
+      }
+  
+      a {
+        color: $title-color;
+        &:hover {
+          color: $theme-color;
+        }
+      }
     }
-}
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 1700px) {
+    .header-layout1 .header-navbar-logo {
+      padding-right: 35px;
+      padding-left: 0;
+    }
+  
+    .header-layout1 .header-top {
+      .header-links {
+        padding-right: 160px;
+        padding-left: 0;
+      }
+    }
+  
+    .header-layout1 .menu-area {
+      .main-menu {
+        padding-right: 160px;
+        padding-left: 0;
+      }
+    }
+  }
+  
+  @include xxl {
+    .header-layout1 .header-top .header-links {
+      padding-right: 0;
+    }
+  
+    .header-layout1 .menu-area .main-menu {
+      padding-right: 200px;
+    }
+  }
+  
+  @include ml {
+    .header-layout1 .menu-area .main-menu {
+      padding-right: 160px;
+    }
+  
+    .header-layout1 .header-navbar-logo {
+      padding-right: 30px;
+    }
+  }
+  
+  @include xl {
+    .header-layout1 .menu-area .main-menu {
+      padding-right: 230px;
+    }
+  }
+  
+  @include lg {
+    .header-layout1 .menu-area .main-menu {
+      padding-right: 0;
+    }
+  
+    .header-layout1 {
+      .header-logo {
+        &:after {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+  }
+  
+  @include md {
+    .header-layout1 .social-links {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .header-layout1 .social-links:after {
+      right: 0;
+    }
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (max-width: 992px) {
+    .header-layout1 .header-top {
+      flex-direction: column;
+    }
+  
+    .header-layout1 .header-links ul {
+      flex-direction: column;
+    }
+  
+    .social-links {
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* Ajuste para pantallas más pequeñas */
+      color: #fff; /* Cambia el color de los íconos a blanco */
+    }
+  
+    .social-links a {
+      color: #fff; /* Asegúrate de que los enlaces también sean blancos */
+    }
+  }
+  

@@ -5,12 +5,13 @@
     "span": "Your vehicle ",
     "text": "Because your time and safety are our priority.",
     "buttons": {
-      "learnAboutUs": "Learn About Us",
+      "learnAboutUs": "Contact Us",
       "ourServices": "Our Services"
     }
   },
   "header": {
-    "hours": "Hours: Monday to Friday: 9:00 AM to 6:30 PM and Saturday from 9:00 AM to 2:00 PM.",
+    "hours": "Hours: Monday to Friday: 9:00 AM to 6:30 PM ",
+    "hours2":"and Saturday from 9:00 AM to 2:00 PM.",
     "buttons": {
       "home": "Home",
       "about": "About Us",
@@ -163,19 +164,19 @@
     "sectionTitle": "Car Repair with the Best Services",
     "testimonials": {
       "1":{
-        "name": "Nafiz Bhuiyan",
+        "name": "Javier Reyes",
         "designation": "Customer",
         "quote": "Services include engine diagnostics and repair, brakes, electrical systems, and air conditioning. Expert technicians identify and address issues with electrical systems, brakes, and other parts of the vehicle.",
         "rating": 5
       },
       "2":{
-        "name": "Nafiz Bhuiyan",
+        "name": "Francisco Zuñiga",
         "designation": "Customer",
         "quote": "The service is excellent, quick, and reliable. The technicians fixed the heating issue in my car and performed a complete engine diagnostic.",
         "rating": 5
       },
       "3":{
-        "name": "Nafiz Bhuiyan",
+        "name": "Israel Muñoz",
         "designation": "Customer",
         "quote": "They repaired the electrical system and checked the brakes. They also fixed an issue with the alarm and immobilizer. Very satisfied with the service received.",
         "rating": 5
@@ -202,7 +203,7 @@
       "buttonSubmit": "Submit"
     },
     "copyright": {
-      "text": "© Fixturbo 2024 | All Rights Reserved",
+      "text": "© JofrealPacifico 2024 | All Rights Reserved",
       "terms": "Terms & Conditions",
       "privacyPolicy": "Privacy Policy",
       "contactUs": "Contact Us"
