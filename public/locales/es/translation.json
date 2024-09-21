@@ -1,0 +1,236 @@
+{
+  "hero": {
+    "subTitle": "en las mejores manos:",
+    "title": "servicio rápido y confiable",
+    "span": "Tu vehículo ",
+    "text": "Porque tu tiempo y seguridad son nuestra prioridad.",
+    "buttons": {
+      "learnAboutUs": "Conócenos",
+      "ourServices": "Nuestros Servicios"
+    }
+  },
+  "header":{
+    "hours":"Horarios: de Lunes a Viernes de: 9:00 a 18:30 Hrs y Sábado de 9:00 a 14:00 Hrs.",
+    "buttons":{
+      "home":"Inicio",
+      "about":"Sobre nosotros",
+      "services":"Servicios",
+      "help":{
+        "title":"¿Necesitas Ayuda?",
+        "link":"+569 326 346 17"
+      }
+    }
+  },
+  "counter": {
+    "winningAward": "Premio Ganador",
+    "happyClients": "Clientes Felices",
+    "teamMember": "Miembro del Equipo",
+    "projectDone": "Proyectos Completados"
+  },
+  "checklist": {
+    "superstore": "Somos Tu Supertienda de Reparaciones",
+    "expertise": "Impulsado por la Experiencia",
+    "bestService": "La mejor reparación de coches"
+  },
+  "call": {
+    "requestCall": "Solicitar una llamada"
+  },
+  "about": {
+    "subTitle": "Conócenos",
+    "title": "Donde la experiencia se encuentra con cada motor",
+    "description": "Especialistas en mecánica, electricidad y electrónica para automóviles.",
+    "experience": {
+      "years": "Años de experiencia",
+      "count": "25"
+    },
+    "checklist": {
+      "professionalService": "Servicios Profesionales de Mecánica Automotriz",
+      "repairService": "Diagnóstico y Reparación de Motores, Frenos, y más.",
+      "fixRightAway": "Arreglos rápidos y eficientes.",
+      "quickEfficient": "Herramientas especializadas para diagnósticos precisos."
+    },
+    "button": {
+      "readMore": "Leer Más"
+    }
+  },
+  "service": {
+    "subTitle": "Últimos Servicios",
+    "title": "Reparación Profesional de Coches",
+    "services": {
+      "1":{
+        "title": "Diagnóstico de Motores",
+        "description": "Diagnósticos avanzados para la reparación y mantenimiento de motores."
+      },
+      "2":{
+        "title": "Sistemas Eléctricos",
+        "description": "Soluciones en electricidad automotriz, desde aire acondicionado hasta sistemas de iluminación."
+      },
+      "3":{
+        "title": "Sistemas de Seguridad",
+        "description": "Reparación de alarmas, inmovilizadores y módulos de ABS y Airbag."
+      }
+    },
+    "button": {
+      "readMore": "Leer Más"
+    }
+  },
+  "portfolio": {
+    "subTitle": "Servicios Trabajados",
+    "title": "Donde la Pericia Encuentra Cada Motor",
+    "filter": {
+      "all": "Todos los Servicios",
+      "mechanics": "Mecánica",
+      "security": "Seguridad",
+      "electricity": "Electrico"
+    },
+    "projects": {
+      "1": {
+        "category": "Mecánica",
+        "title": "Diagnóstico y Reparación de Motores"
+      },
+      "2": {
+        "category": "Seguridad",
+        "title": "Reparación del Sistema de Frenos"
+      },
+      "3": {
+        "category": "Mecánica",
+        "title": "Revisión de Tren Delantero y Embragues"
+      },
+      "4": {
+        "category": "Electrico",
+        "title": "Revisión del Sistema Eléctrico"
+      },
+      "5": {
+        "category": "Electrico",
+        "title": "Reparación de Aire Acondicionado"
+      },
+      "6": {
+        "category": "Seguridad",
+        "title": "Instalación de Alarmas e Inmovilizadores"
+      },
+      "7": {
+        "category": "Seguridad",
+        "title": "Reparación de Chapas y Llaves con Chip"
+      },
+      "8": {
+        "category": "Electrónica",
+        "title": "Reparación de Cremayeras Alzavidrio y Botoneras"
+      },
+      "9": {
+        "category": "Diagnóstico",
+        "title": "Diagnósticos con Escáner y Osciloscopio"
+      },
+      "10": {
+        "category": "Electrónica",
+        "title": "Banco de Pruebas de Inyectores, Bobinas y Módulos de Encendido"
+      },
+      "11": {
+        "category": "Seguridad",
+        "title": "Revisión de Módulos de ABS y Airbag"
+      }
+    },
+
+    "button": {
+      "readMore": "Leer Más"
+    }
+  },
+  "appointmentArea": {
+    "titleArea": {
+      "subTitle": "Envíanos una solicitud",
+      "title": "Nuestra tienda de reparación de autos integral"
+    },
+    "form": {
+      "labels": {
+        "name": "Tu nombre",
+        "email": "Correo Electrónico",
+        "number": "Número de Teléfono",
+        "subject": "Elige una opción",
+        "message": "Escribe tu mensaje aquí.."
+      },
+      "serviceOptions": {
+        "mechanic": "Reparación de Motor",
+        "brakes": "Reparación de Frenos",
+        "airConditioning": "Aire Acondicionado y Calefacción",
+        "electrical": "Sistemas Eléctricos",
+        "immobilizer": "Alarmas e Inmovilizadores",
+        "diagnostics": "Diagnóstico con Escáner y Osciloscopio"
+      },
+      "button": "Agendar cita ahora"
+    },
+    "imageAlt": "Fixturbo"
+  },
+  "testimonial-area": {
+    "title": "Testimonios de Clientes",
+    "sectionTitle": "Taller de Reparación de Autos con los Mejores Servicios",
+    "testimonials": [
+      {
+        "name": "Nafiz Bhuiyan",
+        "designation": "Cliente",
+        "quote": "Los servicios incluyen diagnóstico y reparación de motores, frenos, sistemas eléctricos, y aire acondicionado. Técnicos expertos identifican y abordan problemas en sistemas eléctricos, frenos, y otras partes del vehículo.",
+        "rating": 5
+      },
+      {
+        "name": "Nafiz Bhuiyan",
+        "designation": "Cliente",
+        "quote": "El servicio es excelente, rápido y confiable. Los técnicos solucionaron el problema de la calefacción de mi automóvil y realizaron un diagnóstico completo del motor.",
+        "rating": 5
+      },
+      {
+        "name": "Nafiz Bhuiyan",
+        "designation": "Cliente",
+        "quote": "Repararon el sistema eléctrico y revisaron los frenos. También solucionaron un problema con la alarma y el inmovilizador. Muy satisfecho con el servicio recibido.",
+        "rating": 5
+      }
+    ],
+    "arrowNext": "Siguiente",
+    "arrowPrev": "Anterior",
+    "imageAlt": "Imagen testimonial de Fixturbo"
+  },
+  "suscribeOne":{
+    "call":"Solicitar una llamada:"
+  },
+  "footer-area": {
+    "company": {
+      "title": "Compañía",
+      "links": {
+        "about": "Acerca de",
+        "team": "Equipo",
+        "faq": "Preguntas Frecuentes",
+        "privacyPolicy": "Política de Privacidad"
+      }
+    },
+    "services": {
+      "title": "Servicios",
+      "links": {
+        "mechanicMasters": "Maestros Mecánicos",
+        "speedyAutoRepair": "Reparación Rápida de Autos",
+        "mobileCarRepair": "Reparación Móvil de Autos",
+        "proAutoFix": "Reparación Profesional de Autos",
+        "precisionAutoWorks": "Trabajos de Precisión en Autos"
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "+569 326 346 17",
+      "email": "mauriciojofre.alpacifico80@gmail.com",
+      "address": "Primera Transversal 2635, Maipú, Chile."
+    },
+    "newsletter": {
+      "title": "Mantente en Contacto",
+      "description": "Lorem Ipsum es simplemente un texto de relleno de la industria de la impresión.",
+      "placeholderEmail": "Tu Dirección de Correo",
+      "buttonSubmit": "Enviar"
+    },
+    "copyright": {
+      "text": "© Fixturbo 2024 | Todos los Derechos Reservados",
+      "terms": "Términos y Condiciones",
+      "privacyPolicy": "Política de Privacidad",
+      "contactUs": "Contáctanos"
+    }
+  },
+  "slider-marquee": {
+    "expressCarFix": "Arreglo Exprés de Autos",
+    "carCareClinic": "Clínica de Cuidado de Autos"
+  }
+    
+}

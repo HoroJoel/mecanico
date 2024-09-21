@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-const ClientAreaOne = () => {
+import { useTranslation } from "react-i18next";
+export default function ClientAreaOne()  {
+  const { t } = useTranslation('translation');
   return (
     <div
-      className="client-bg-area"
+      className="client-bg-area" 
       style={{ backgroundImage: "url(assets/img/bg/client-bg1-1.png)" }}
     >
       <div className="client-area-1 text-center">
@@ -141,9 +142,9 @@ const ClientAreaOne = () => {
             <div className="col-lg-7">
               <div className="appointment-form-wrap bg-theme">
                 <div className="title-area">
-                  <span className="sub-title text-white">Send a request</span>
+                  <span className="sub-title text-white">{t('appointmentArea.titleArea.subTitle')}</span>
                   <h2 className="sec-title text-white">
-                    Our One-Stop Car Repair Shop
+                  {t('appointmentArea.titleArea.title')}
                   </h2>
                 </div>
                 <form
@@ -159,7 +160,7 @@ const ClientAreaOne = () => {
                           className="form-control style-border2"
                           name="name"
                           id="name"
-                          placeholder="Your Name"
+                          placeholder={t('appointmentArea.form.labels.name')}
                         />
                       </div>
                     </div>
@@ -170,7 +171,7 @@ const ClientAreaOne = () => {
                           className="form-control style-border2"
                           name="email"
                           id="email"
-                          placeholder="Email Address"
+                          placeholder={t('appointmentArea.form.labels.email')}
                         />
                       </div>
                     </div>
@@ -181,7 +182,7 @@ const ClientAreaOne = () => {
                           className="form-control style-border2"
                           name="number"
                           id="number"
-                          placeholder="Phone Number"
+                          placeholder={t('appointmentArea.form.labels.number')}
                         />
                       </div>
                     </div>
@@ -193,10 +194,13 @@ const ClientAreaOne = () => {
                           className="form-select style-border2"
                           defaultValue={"Choose"}
                         >
-                          <option value="Choose">Choose a Option</option>
-                          <option value="Construction">Auto Repair</option>
-                          <option value="Real Estate">Car Repair</option>
-                          <option value="Industry">Automotive</option>
+                          <option value="Choose">{t('appointmentArea.form.labels.subject')}</option>
+                          <option value="mechanic">{t('appointmentArea.form.serviceOptions.mechanic')}</option>
+                          <option value="brakes">{t('appointmentArea.form.serviceOptions.brakes')}</option>
+                          <option value="airConditioning">{t('appointmentArea.form.serviceOptions.airConditioning')}</option>
+                          <option value="electrical">{t('appointmentArea.form.serviceOptions.electrical')}</option>
+                          <option value="immobilizer">{t('appointmentArea.form.serviceOptions.immobilizer')}</option>
+                          <option value="diagnostics">{t('appointmentArea.form.serviceOptions.diagnostics')}</option>
                         </select>
                         <i className="fas fa-angle-down text-white" />
                       </div>
@@ -204,7 +208,7 @@ const ClientAreaOne = () => {
                   </div>
                   <div className="form-group col-12">
                     <textarea
-                      placeholder="Message here.."
+                      placeholder= {t('appointmentArea.form.labels.message')}
                       id="contactForm"
                       className="form-control style-border2"
                       defaultValue={""}
@@ -212,7 +216,7 @@ const ClientAreaOne = () => {
                   </div>
                   <div className="form-btn col-12">
                     <button className="btn style3">
-                      Appointment Now <i className="fas fa-arrow-right ms-2" />
+                      {t('appointmentArea.form.button')} <i className="fas fa-arrow-right ms-2" />
                     </button>
                   </div>
                 </form>
@@ -231,4 +235,3 @@ const ClientAreaOne = () => {
   );
 };
 
-export default ClientAreaOne;

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const BlogAreaOne = () => {
   return (
     <>
-      <section className="blog-area-1 space-bottom position-relative">
+      <section style={{ display: "none" }} className="blog-area-1 space-bottom position-relative">
         <div className="blog-shape-img1 shape-mockup d-lg-block d-none">
           <img
             className="about1-shape-img-1 spin"

@@ -1,0 +1,215 @@
+{
+  "hero": {
+    "subTitle": "in the best hands:",
+    "title": "fast and reliable service",
+    "span": "Your vehicle ",
+    "text": "Because your time and safety are our priority.",
+    "buttons": {
+      "learnAboutUs": "Learn About Us",
+      "ourServices": "Our Services"
+    }
+  },
+  "header": {
+    "hours": "Hours: Monday to Friday: 9:00 AM to 6:30 PM and Saturday from 9:00 AM to 2:00 PM.",
+    "buttons": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "help": {
+        "title": "Need Help?",
+        "link": "+569 326 346 17"
+      }
+    }
+  },
+  "counter": {
+    "winningAward": "Award Winning",
+    "happyClients": "Happy Clients",
+    "teamMember": "Team Member",
+    "projectDone": "Completed Projects"
+  },
+  "checklist": {
+    "superstore": "We Are Your Repair Superstore",
+    "expertise": "Driven by Experience",
+    "bestService": "The Best Car Repairs"
+  },
+  "call": {
+    "requestCall": "Request a Call"
+  },
+  "about": {
+    "subTitle": "Learn About Us",
+    "title": "Where Experience Meets Every Engine",
+    "description": "Specialists in mechanics, electricity, and electronics for automobiles.",
+    "experience": {
+      "years": "Years of experience",
+      "count": "25"
+    },
+    "checklist": {
+      "professionalService": "Professional Automotive Repair Services",
+      "repairService": "Diagnostics and Repair of Engines, Brakes, and more.",
+      "fixRightAway": "Quick and efficient repairs.",
+      "quickEfficient": "Specialized tools for precise diagnostics."
+    },
+    "button": {
+      "readMore": "Read More"
+    }
+  },
+  "service": {
+    "subTitle": "Latest Services",
+    "title": "Professional Car Repairs",
+    "services": {
+      "1": {
+        "title": "Engine Diagnostics",
+        "description": "Advanced diagnostics for engine repair and maintenance."
+      },
+      "2": {
+        "title": "Electrical Systems",
+        "description": "Automotive electrical solutions, from air conditioning to lighting systems."
+      },
+      "3": {
+        "title": "Safety Systems",
+        "description": "Repair of alarms, immobilizers, and ABS and Airbag modules."
+      }
+    },
+    "button": {
+      "readMore": "Read More"
+    }
+  },
+  "portfolio": {
+    "subTitle": "Recent Services",
+    "title": "Where Expertise Meets Every Engine",
+    "filter": {
+      "all": "All Services",
+      "mechanics": "Mechanics",
+      "security": "Security",
+      "electricity": "Electricity"
+    },
+    "projects": {
+      "1": {
+        "category": "Mechanics",
+        "title": "Diagnosis and Repair of Engines"
+      },
+      "2": {
+        "category": "Security",
+        "title": "Brake System Repair"
+      },
+      "3": {
+        "category": "Mechanics",
+        "title": "Front End and Clutch Inspection"
+      },
+      "4": {
+        "category": "Electrical",
+        "title": "Electrical System Inspection"
+      },
+      "5": {
+        "category": "Electrical",
+        "title": "Air Conditioning Repair"
+      },
+      "6": {
+        "category": "Security",
+        "title": "Alarm and Immobilizer Installation"
+      },
+      "7": {
+        "category": "Security",
+        "title": "Repair of Locks and Chip Keys"
+      },
+      "8": {
+        "category": "Electronics",
+        "title": "Repair of Power Window Mechanisms and Switches"
+      },
+      "9": {
+        "category": "Diagnostics",
+        "title": "Diagnosis with Scanner and Oscilloscope"
+      },
+      "10": {
+        "category": "Electronics",
+        "title": "Injector, Coil, and Ignition Module Testing Bench"
+      },
+      "11": {
+        "category": "Security",
+        "title": "ABS and Airbag Module Inspection"
+      }
+    },
+    "button": {
+      "readMore": "Read More"
+    }
+  },
+  "appointmentArea": {
+    "titleArea": {
+      "subTitle": "Send a request",
+      "title": "Our One-Stop Car Repair Shop"
+    },
+    "form": {
+      "labels": {
+        "name": "Your Name",
+        "email": "Email Address",
+        "number": "Phone Number",
+        "subject": "Choose an Option",
+        "message": "Message here.."
+      },
+      "serviceOptions": {
+        "mechanic": "Engine Repair",
+        "brakes": "Brake Repair",
+        "airConditioning": "Air Conditioning & Heating",
+        "electrical": "Electrical Systems",
+        "immobilizer": "Alarms & Immobilizers",
+        "diagnostics": "Diagnostics with Scanner and Oscilloscope"
+      },
+      "button": "Appointment Now"
+    },
+    "imageAlt": "Fixturbo"
+  },
+  "testimonial-area": {
+    "title": "Clients Testimonials",
+    "sectionTitle": "Car Repair with the Best Services",
+    "testimonials": {
+      "1":{
+        "name": "Nafiz Bhuiyan",
+        "designation": "Customer",
+        "quote": "Services include engine diagnostics and repair, brakes, electrical systems, and air conditioning. Expert technicians identify and address issues with electrical systems, brakes, and other parts of the vehicle.",
+        "rating": 5
+      },
+      "2":{
+        "name": "Nafiz Bhuiyan",
+        "designation": "Customer",
+        "quote": "The service is excellent, quick, and reliable. The technicians fixed the heating issue in my car and performed a complete engine diagnostic.",
+        "rating": 5
+      },
+      "3":{
+        "name": "Nafiz Bhuiyan",
+        "designation": "Customer",
+        "quote": "They repaired the electrical system and checked the brakes. They also fixed an issue with the alarm and immobilizer. Very satisfied with the service received.",
+        "rating": 5
+      }
+    },
+    "arrowNext": "Next",
+    "arrowPrev": "Previous",
+    "imageAlt": "Fixturbo testimonial image"
+  },
+  "suscribeOne":{
+    "call":"Requesting A Call:"
+  },
+  "footer-area": {
+    "contact": {
+      "title": "Contact",
+      "phone": "+569 326 346 17",
+      "email": "mauriciojofre.alpacifico80@gmail.com",
+      "address": "Primera Transversal 2635, Maipú, Chile."
+    },
+    "newsletter": {
+      "title": "Get In Touch",
+      "description": "Lorem Ipsum is simply dummy text of the printing industry.",
+      "placeholderEmail": "Your Email Address",
+      "buttonSubmit": "Submit"
+    },
+    "copyright": {
+      "text": "© Fixturbo 2024 | All Rights Reserved",
+      "terms": "Terms & Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "contactUs": "Contact Us"
+    }
+  },
+  "slider-marquee": {
+    "expressCarFix": "Express Car Fix",
+    "carCareClinic": "Car Care Clinic"
+  }
+}

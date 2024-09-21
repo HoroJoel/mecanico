@@ -1,7 +1,9 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-const MarqueeOne = () => {
+import { useTranslation } from 'react-i18next';
+export default function MarqueeOne() {
+  const { t } = useTranslation('translation');
   return (
     <div className="space bg-smoke">
       <div className="container-fluid p-0 overflow-hidden">
@@ -14,7 +16,7 @@ const MarqueeOne = () => {
                     src="assets/img/icon/marquee-icon-1-1.svg"
                     alt="Fixturbo"
                   />
-                  <span>Express Car Fix</span>
+                  <span>{t('slider-marquee.expressCarFix')}</span>
                 </Link>
               </div>
               <div className="item">
@@ -23,7 +25,7 @@ const MarqueeOne = () => {
                     src="assets/img/icon/marquee-icon-1-2.svg"
                     alt="Fixturbo"
                   />
-                  <span className="text-stroke">Car Care Clinic</span>
+                  <span className="text-stroke">{t('slider-marquee.carCareClinic')}</span>
                 </Link>
               </div>
               <div className="item">
@@ -32,7 +34,7 @@ const MarqueeOne = () => {
                     src="assets/img/icon/marquee-icon-1-1.svg"
                     alt="Fixturbo"
                   />
-                  <span>Express Car Fix</span>
+                  <span>{t('slider-marquee.expressCarFix')}</span>
                 </Link>
               </div>
               <div className="item">
@@ -41,7 +43,7 @@ const MarqueeOne = () => {
                     src="assets/img/icon/marquee-icon-1-2.svg"
                     alt="Fixturbo"
                   />
-                  <span className="text-stroke">Car Care Clinic</span>
+                  <span className="text-stroke">{t('slider-marquee.carCareClinic')}</span>
                 </Link>
               </div>
             </Marquee>
@@ -52,4 +54,3 @@ const MarqueeOne = () => {
   );
 };
 
-export default MarqueeOne;

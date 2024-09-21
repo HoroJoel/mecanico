@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const PricingPlanOne = () => {
   return (
-    <div className="pricing-area space">
+    <div style={{ display: "none" }} className="pricing-area space">
       <div className="pricing-shape-img1 shape-mockup d-lg-block d-none">
         <img
           className="about1-shape-img-1 spin"

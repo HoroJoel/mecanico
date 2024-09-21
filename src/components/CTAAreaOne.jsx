@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CTAAreaOne = () => {
   return (
-    <div className="cta-area-1">
+    <div style={{ display: "none" }} className="cta-area-1">
       <div className="cta1-bg-thumb">
         <img src="assets/img/bg/cta-bg1-1.png" alt="Fixturbo"/>
       </div>

@@ -1,34 +1,93 @@
-import React, { useEffect, useState } from "react";
-import Isotope from "isotope-layout";
-import imagesLoaded from "imagesloaded";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-const PortfolioOne = () => {
-  const isotope = React.useRef(Isotope | null);
-  const [active, setActive] = useState(1);
 
-  // handling filter key change
-  useEffect(() => {
-    const imgLoad = imagesLoaded(document.querySelectorAll(".image-container"));
+export default function PortfolioOne() {
+  const [active, setActive] = useState('all');
+  const { t } = useTranslation('translation');
 
-    imgLoad.on("done", () => {
-      isotope.current = new Isotope(".filter-container", {
-        itemSelector: ".filter-item",
-        layoutMode: "masonry",
-        percentPosition: true,
-      });
+  // Datos del portafolio
+  const projects = [
+    {
+      id: 1,
+      category: t('portfolio.filter.mechanics'),
+      img: "assets/img/portfolio/1-3.png",
+      title: t('portfolio.projects.1.title'),
+    },
+    {
+      id: 2,
+      category: t('portfolio.filter.security'),
+      img: "assets/img/portfolio/1-4.png",
+      title: t('portfolio.projects.2.title'),
+    },
+    {
+      id: 3,
+      category: t('portfolio.filter.mechanics'),
+      img: "assets/img/portfolio/1-7.png",
+      title: t('portfolio.projects.3.title'),
+    },
+    {
+      id: 4,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-6.png",
+      title: t('portfolio.projects.4.title'),
+    },
+    {
+      id: 5,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-5.jpg",
+      title: t('portfolio.projects.5.title'),
+    },
+    {
+      id: 6,
+      category: t('portfolio.filter.security'),
+      img: "assets/img/portfolio/1-2.png",
+      title: t('portfolio.projects.6.title'),
+    },
+    {
+      id: 7,
+      category: t('portfolio.filter.security'),
+      img: "assets/img/portfolio/1-1.jpeg",
+      title: t('portfolio.projects.7.title'),
+    },
+    {
+      id: 8,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-10.jpg",
+      title: t('portfolio.projects.8.title'),
+    },
+    {
+      id: 9,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-11.png",
+      title: t('portfolio.projects.9.title'),
+    },
+    {
+      id: 10,
+      category: t('portfolio.filter.electricity'),
+      img: "assets/img/portfolio/1-9.png",
+      title: t('portfolio.projects.10.title'),
+    },
+    {
+      id: 11,
+      category: t('portfolio.filter.security'),
+      img: "assets/img/portfolio/1-8.png",
+      title: t('portfolio.projects.11.title'),
+    }
+  ];
 
-      return () => isotope.current?.destroy();
-    });
-
-    return () => imgLoad.off("done");
-  }, []);
-
-  const handleFilterKeyChange = (key, index) => {
-    setActive(index);
-    isotope.current?.arrange({ filter: `${key}` });
+  // Manejar el cambio de categoría activa
+  const handleFilterKeyChange = (category) => {
+    setActive(category);
   };
+
+  // Filtrar proyectos según la categoría activa
+  const filteredProjects = active === 'all' ? projects : projects.filter(project => project.category === active);
+
   return (
+    
     <div className="portfolio-area-1 space">
+      <section id="services">
       <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
         <img
           className="about1-shape-img-1 spin"
@@ -45,171 +104,72 @@ const PortfolioOne = () => {
         <div className="row justify-content-center">
           <div className="col-lg-5">
             <div className="title-area text-center">
-              <span className="sub-title">Latest Portfolio</span>
-              <h2 className="sec-title">Where Expertise Meets Every Engine</h2>
+              <span className="sub-title">{t('portfolio.subTitle')}</span>
+              <h2 className="sec-title">{t('portfolio.title')}</h2>
             </div>
           </div>
           <div className="col-12">
             <div className="portfolio-tab-1 mb-60">
               <div className="filter-menu-active text-center">
                 <button
-                  className={`${active === 1 && "active"}  btn style-border3`}
+                  className={`${active === 'all' && "active"} btn style-border3`}
                   type="button"
-                  onClick={() => handleFilterKeyChange("*", 1)}
+                  onClick={() => handleFilterKeyChange('all')}
                 >
-                  All Project
+                  {t('portfolio.filter.all')}
                 </button>
                 <button
-                  className={`${active === 2 && "active"}  btn style-border3`}
+                  className={`${active === t('portfolio.filter.electricity') && "active"} btn style-border3`}
                   type="button"
-                  onClick={() => handleFilterKeyChange(".pro1", 2)}
+                  onClick={() => handleFilterKeyChange(t('portfolio.filter.electricity'))}
                 >
-                  Auto Fixers
+                  {t('portfolio.filter.electricity')}
                 </button>
                 <button
-                  className={`${active === 3 && "active"}  btn style-border3`}
+                  className={`${active === t('portfolio.filter.mechanics') && "active"} btn style-border3`}
                   type="button"
-                  onClick={() => handleFilterKeyChange(".pro2", 3)}
+                  onClick={() => handleFilterKeyChange(t('portfolio.filter.mechanics'))}
                 >
-                  Car Care Clinic
+                  {t('portfolio.filter.mechanics')}
                 </button>
-                <button
-                  className={`${active === 4 && "active"}  btn style-border3`}
+                <button 
+                  className={`${active === t('portfolio.filter.security') && "active"} btn style-border3`}
                   type="button"
-                  onClick={() => handleFilterKeyChange(".pro3", 4)}
+                  onClick={() => handleFilterKeyChange(t('portfolio.filter.security'))}
                 >
-                  Car Fix
+                  {t('portfolio.filter.security')}
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="row gy-30 gx-30  filter-container">
-          <div className="col-lg-4 filter-item  pro1 pro3">
-            <div className="portfolio-card image-container">
-              <div className="portfolio-card-thumb">
-                <img src="assets/img/portfolio/1-3.png" alt="Fixturbo" />
-              </div>
-              <div className="portfolio-card-details">
-                <div className="media-left">
-                  <span className="portfolio-card-details_subtitle">
-                    Our Projects
-                  </span>
-                  <h4 className="portfolio-card-details_title">
-                    <Link to="/project-details">Women Entrepreneurs3</Link>
-                  </h4>
-                </div>
-                <Link to="/project-details" className="icon-btn">
-                  <i className="fas fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 filter-item  pro2 pro4">
-            <div className="portfolio-card image-container">
-              <div className="portfolio-card-thumb">
-                <img src="assets/img/portfolio/1-3.png" alt="Fixturbo" />
-              </div>
-              <div className="portfolio-card-details">
-                <div className="media-left">
-                  <span className="portfolio-card-details_subtitle">
-                    Our Projects
-                  </span>
-                  <h4 className="portfolio-card-details_title">
-                    <Link to="/project-details">Women Entrepreneurs3</Link>
-                  </h4>
-                </div>
-                <Link to="/project-details" className="icon-btn">
-                  <i className="fas fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
 
-          <div className="col-lg-4 filter-item pro3 pro1">
-            <div className="portfolio-card image-container">
-              <div className="portfolio-card-thumb">
-                <img src="assets/img/portfolio/1-4.png" alt="Fixturbo" />
-              </div>
-              <div className="portfolio-card-details">
-                <div className="media-left">
-                  <span className="portfolio-card-details_subtitle">
-                    Our Projects
-                  </span>
-                  <h4 className="portfolio-card-details_title">
-                    <Link to="/project-details">Women Entrepreneurs4</Link>
-                  </h4>
+        <div className="row gy-30 gx-30">
+          {filteredProjects.map((project) => (
+            <div className="col-lg-4 filter-item" key={project.id}>
+              <div className="portfolio-card image-container">
+                <div className="portfolio-card-thumb">
+                  <img src={project.img} alt="Fixturbo" />
                 </div>
-                <Link to="/project-details" className="icon-btn">
-                  <i className="fas fa-arrow-right" />
-                </Link>
+                <div className="portfolio-card-details">
+                  <div className="media-left">
+                    <span className="portfolio-card-details_subtitle">
+                      {project.category}
+                    </span>
+                    <h4 className="portfolio-card-details_title">
+                      <Link to="/project-details">{project.title}</Link>
+                    </h4>
+                  </div>
+                  <Link style={{ display: "none" }}  to="/project-details" className="icon-btn">
+                    <i className="fas fa-arrow-right" />
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-4 filter-item pro4 pro2">
-            <div className="portfolio-card image-container">
-              <div className="portfolio-card-thumb">
-                <img src="assets/img/portfolio/1-4.png" alt="Fixturbo" />
-              </div>
-              <div className="portfolio-card-details">
-                <div className="media-left">
-                  <span className="portfolio-card-details_subtitle">
-                    Our Projects
-                  </span>
-                  <h4 className="portfolio-card-details_title">
-                    <Link to="/project-details">Women Entrepreneurs4</Link>
-                  </h4>
-                </div>
-                <Link to="/project-details" className="icon-btn">
-                  <i className="fas fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 filter-item pro4 pro1">
-            <div className="portfolio-card image-container">
-              <div className="portfolio-card-thumb">
-                <img src="assets/img/portfolio/1-4.png" alt="Fixturbo" />
-              </div>
-              <div className="portfolio-card-details">
-                <div className="media-left">
-                  <span className="portfolio-card-details_subtitle">
-                    Our Projects
-                  </span>
-                  <h4 className="portfolio-card-details_title">
-                    <Link to="/project-details">Women Entrepreneurs4</Link>
-                  </h4>
-                </div>
-                <Link to="/project-details" className="icon-btn">
-                  <i className="fas fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 filter-item pro4 pro2 pro3">
-            <div className="portfolio-card image-container">
-              <div className="portfolio-card-thumb">
-                <img src="assets/img/portfolio/1-4.png" alt="Fixturbo" />
-              </div>
-              <div className="portfolio-card-details">
-                <div className="media-left">
-                  <span className="portfolio-card-details_subtitle">
-                    Our Projects
-                  </span>
-                  <h4 className="portfolio-card-details_title">
-                    <Link to="/project-details">Women Entrepreneurs4</Link>
-                  </h4>
-                </div>
-                <Link to="/project-details" className="icon-btn">
-                  <i className="fas fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+      </section>
     </div>
   );
-};
-
-export default PortfolioOne;
+}

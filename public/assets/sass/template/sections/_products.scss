@@ -308,6 +308,12 @@
   .container {
     position: relative;
   }
+  .container {
+    width: 100%; /* Asegúrate de que se ajuste al 100% del contenedor principal */
+    max-width: 100vw; /* No excede el ancho de la pantalla */
+  }
+  
+  
   .product-big-img {
     margin-top: 15px;
     margin-bottom: 15px;
