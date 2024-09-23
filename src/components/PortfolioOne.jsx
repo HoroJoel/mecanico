@@ -85,90 +85,90 @@ export default function PortfolioOne() {
   const filteredProjects = active === 'all' ? projects : projects.filter(project => project.category === active);
 
   return (
-    
+
     <div className="portfolio-area-1 space">
       <section id="services">
-      <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
-        <img
-          className="about1-shape-img-1 spin"
-          src="assets/img/normal/about_shape1-2.svg"
-          alt="Fixturbo"
-        />
-        <img
-          className="about1-shape-img-2 spin2"
-          src="assets/img/normal/about_shape1-1.svg"
-          alt="Fixturbo"
-        />
-      </div>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-5">
-            <div className="title-area text-center">
-              <span className="sub-title">{t('portfolio.subTitle')}</span>
-              <h2 className="sec-title">{t('portfolio.title')}</h2>
+        <div className="portfolio-shape-img shape-mockup d-lg-block d-none">
+          <img
+            className="about1-shape-img-1 spin"
+            src="assets/img/normal/about_shape1-2.svg"
+            alt="Fixturbo"
+          />
+          <img
+            className="about1-shape-img-2 spin2"
+            src="assets/img/normal/about_shape1-1.svg"
+            alt="Fixturbo"
+          />
+        </div>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-5">
+              <div className="title-area text-center">
+                <span className="sub-title">{t('portfolio.subTitle')}</span>
+                <h2 className="sec-title">{t('portfolio.title')}</h2>
+              </div>
             </div>
-          </div>
-          <div className="col-12">
-            <div className="portfolio-tab-1 mb-60">
-              <div className="filter-menu-active text-center">
-                <button
-                  className={`${active === 'all' && "active"} btn style-border3`}
-                  type="button"
-                  onClick={() => handleFilterKeyChange('all')}
-                >
-                  {t('portfolio.filter.all')}
-                </button>
-                <button
-                  className={`${active === t('portfolio.filter.electricity') && "active"} btn style-border3`}
-                  type="button"
-                  onClick={() => handleFilterKeyChange(t('portfolio.filter.electricity'))}
-                >
-                  {t('portfolio.filter.electricity')}
-                </button>
-                <button
-                  className={`${active === t('portfolio.filter.mechanics') && "active"} btn style-border3`}
-                  type="button"
-                  onClick={() => handleFilterKeyChange(t('portfolio.filter.mechanics'))}
-                >
-                  {t('portfolio.filter.mechanics')}
-                </button>
-                <button 
-                  className={`${active === t('portfolio.filter.security') && "active"} btn style-border3`}
-                  type="button"
-                  onClick={() => handleFilterKeyChange(t('portfolio.filter.security'))}
-                >
-                  {t('portfolio.filter.security')}
-                </button>
+            <div className="col-12">
+              <div className="portfolio-tab-1 mb-60">
+                <div className="filter-menu-active text-center">
+                  <button
+                    className={`${active === 'all' && "active"} btn style-border3`}
+                    type="button"
+                    onClick={() => handleFilterKeyChange('all')}
+                  >
+                    {t('portfolio.filter.all')}
+                  </button>
+                  <button
+                    className={`${active === t('portfolio.filter.electricity') && "active"} btn style-border3`}
+                    type="button"
+                    onClick={() => handleFilterKeyChange(t('portfolio.filter.electricity'))}
+                  >
+                    {t('portfolio.filter.electricity')}
+                  </button>
+                  <button
+                    className={`${active === t('portfolio.filter.mechanics') && "active"} btn style-border3`}
+                    type="button"
+                    onClick={() => handleFilterKeyChange(t('portfolio.filter.mechanics'))}
+                  >
+                    {t('portfolio.filter.mechanics')}
+                  </button>
+                  <button
+                    className={`${active === t('portfolio.filter.security') && "active"} btn style-border3`}
+                    type="button"
+                    onClick={() => handleFilterKeyChange(t('portfolio.filter.security'))}
+                  >
+                    {t('portfolio.filter.security')}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="row gy-30 gx-30">
-          {filteredProjects.map((project) => (
-            <div className="col-lg-4 filter-item" key={project.id}>
-              <div className="portfolio-card image-container">
-                <div className="portfolio-card-thumb">
-                  <img src={project.img} alt="Fixturbo" />
-                </div>
-                <div className="portfolio-card-details">
-                  <div className="media-left">
-                    <span className="portfolio-card-details_subtitle">
-                      {project.category}
-                    </span>
-                    <h4 className="portfolio-card-details_title">
-                      <Link to="/project-details">{project.title}</Link>
-                    </h4>
+          <div className="row gy-30 gx-30">
+            {filteredProjects.map((project) => (
+              <div className="col-lg-4 filter-item" key={project.id}>
+                <div className="portfolio-card image-container">
+                  <div className="portfolio-card-thumb">
+                    <img src={project.img} alt="Fixturbo" />
                   </div>
-                  <Link style={{ display: "none" }}  to="/project-details" className="icon-btn">
-                    <i className="fas fa-arrow-right" />
-                  </Link>
+                  <div className="portfolio-card-details">
+                    <div className="media-left">
+                      <span className="portfolio-card-details_subtitle">
+                        {project.category}
+                      </span>
+                      <h4 className="portfolio-card-details_title">
+                        <Link >{project.title}</Link>
+                      </h4>
+                    </div>
+                    <Link style={{ display: "none" }} className="icon-btn">
+                      <i className="fas fa-arrow-right" />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
       </section>
     </div>
   );

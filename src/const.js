@@ -1,0 +1,1 @@
+export const URL_WSP = "https://api.whatsapp.com/send/?phone=56932634617&text=Hola%2C+estoy+interesado+en+solicitar+informaci%C3%B3n+sobre+servicios+automotrices.+%C2%BFMe+pudieran+ayudar%3F&type=phone_number&app_absent=0"

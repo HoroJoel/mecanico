@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-
+import { URL_WSP } from "../const"
 export default function FooterAreaOne() {
   const { t } = useTranslation('translation');
   return (
@@ -62,20 +62,20 @@ export default function FooterAreaOne() {
                 <h3 className="widget_title">{t('footer-area.contact.title')}</h3>
                 <div className="widget-contact">
                   <p>
-                    <Link to="https://api.whatsapp.com/send/?phone=56932634617&text=Hola+%2Ajofrealpacifico%2A.+Necesito+m%C3%A1s+informaci%C3%B3n+sobre+jofrealpacifico+https%3A%2F%2Fjofrealpacifico.cl&type=phone_number&app_absent=0">
-                    {t('footer-area.contact.phone')}
+                    <Link to={URL_WSP}>
+                      {t('footer-area.contact.phone')}
                     </Link>
                   </p>
                   <p>
                     <Link to={t('footer-area.contact.email')}>{t('footer-area.contact.email')}</Link>
                   </p>
                   <p>
-                  <Link to="https://maps.app.goo.gl/bakKHprhDthBcVAU9">{t('footer-area.contact.address')}</Link>
+                    <Link to="https://maps.app.goo.gl/bakKHprhDthBcVAU9">{t('footer-area.contact.address')}</Link>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-xl-auto" style={{display:"none"}}>
+            <div className="col-md-6 col-xl-auto" style={{ display: "none" }}>
               <div className="widget footer-widget widget-newsletter">
                 <h3 className="widget_title">{t('footer-area.newsletter.title')}</h3>
                 <p className="footer-text mb-50">
@@ -103,7 +103,7 @@ export default function FooterAreaOne() {
           <div className="row gy-3 justify-content-md-between justify-content-center">
             <div className="col-auto align-self-center">
               <p className="copyright-text text-center">
-              {t('footer-area.copyright.text')}
+                {t('footer-area.copyright.text')}
               </p>
             </div>
             <div className="col-auto">

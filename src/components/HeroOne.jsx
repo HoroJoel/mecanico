@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {URL_WSP} from "../const"
 export default function HeroOne() {
   const { t } = useTranslation('translation');
   return (
@@ -26,7 +27,7 @@ export default function HeroOne() {
               {t('hero.text')}
               </p>
               <div className="btn-group">
-                <a href="https://api.whatsapp.com/send/?phone=56932634617&text=Hola+%2Ajofrealpacifico%2A.+Necesito+m%C3%A1s+informaci%C3%B3n+sobre+jofrealpacifico+https%3A%2F%2Fjofrealpacifico.cl&type=phone_number&app_absent=0" className="btn">
+                <a href={URL_WSP} className="btn">
                   {t('hero.buttons.learnAboutUs')}
                 </a>
                 <a href="#services" className="btn style-border">
