@@ -26,12 +26,12 @@ export default function ServiceAreaOne (){
                   <img src="assets/img/icon/service-icon_1-1.svg" alt="Fixturbo" />
                 </div>
                 <h4 className="service-card_title h5">
-                  <Link to="/service-details">{t('service.services.1.title')}</Link>
+                  <Link to="">{t('service.services.1.title')}</Link>
                 </h4>
                 <p className="service-card_text">
                 {t('service.services.1.description')}{" "}
                 </p>
-                <Link style={{ display: "none" }}  to="/service-details" className="link-btn">
+                <Link style={{ display: "none" }}  to="" className="link-btn">
                   {t('service.button.readMore')} <i className="fas fa-arrow-right" />
                 </Link>
               </div>
@@ -47,17 +47,17 @@ export default function ServiceAreaOne (){
                   <img src="assets/img/icon/service-icon_1-2.svg" alt="Fixturbo" />
                 </div>
                 <h4 className="service-card_title h5">
-                  <Link to="/service-details">{t('service.services.2.title')}</Link>
+                  <Link to="">{t('service.services.2.title')}</Link>
                 </h4>
                 <p className="service-card_text">
                 {t('service.services.2.description')}{" "}
                 </p>
-                <Link style={{ display: "none" }}  to="/service-details" className="link-btn">
+                <Link style={{ display: "none" }}  to="" className="link-btn">
                   {t('service.button.readMore')} <i className="fas fa-arrow-right" />
                 </Link>
               </div>
               <div className="service-card_img">
-                <img src="assets/img/service/service-1-2.png" alt="Fixturbo" />
+                <img src="assets\img\icon\mecanico-volkswagen.png" alt="Fixturbo" />
               </div>
             </div>
           </div>
@@ -68,12 +68,12 @@ export default function ServiceAreaOne (){
                   <img src="assets/img/icon/service-icon_1-3.svg" alt="Fixturbo" />
                 </div>
                 <h4 className="service-card_title h5">
-                  <Link to="/service-details">{t('service.services.3.title')}</Link>
+                  <Link to="">{t('service.services.3.title')}</Link>
                 </h4>
                 <p className="service-card_text">
                 {t('service.services.3.description')}{" "}
                 </p>
-                <Link style={{ display: "none" }}  to="/service-details" className="link-btn">
+                <Link style={{ display: "none" }}  to="" className="link-btn">
                   {t('service.button.readMore')} <i className="fas fa-arrow-right" />
                 </Link>
               </div>

@@ -11,7 +11,7 @@ export default function PortfolioOne() {
     {
       id: 1,
       category: t('portfolio.filter.mechanics'),
-      img: "assets/img/portfolio/1-3.png",
+      img: "assets/img/portfolio/1-11.png",
       title: t('portfolio.projects.1.title'),
     },
     {
